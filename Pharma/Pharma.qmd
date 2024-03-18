@@ -1,0 +1,181 @@
+---
+title: Untitled
+format:
+  modern2-cv-pdf: default
+author: David Munoz-Tord
+cvfont: raleway #texlive fonts like raleway,fetamont,gillius,comfortaa
+cvcolor: 
+  main: B83B5E
+  accent: 6A2C70
+jobtitle: Data Scientist
+sidebar:
+  image: portrait.jpg
+  sections: 
+    - name: Contact
+      items:
+        - icon: map-marker
+          text: Geneva, Switzerland
+        - icon: phone
+          text: "+41 79 244 1756"
+        - icon: envelope
+          text: david.munoztord@mailbox.org
+        - icon: home
+          text: david-munoztord.com
+          href: https://david-munoztord.com
+        - icon: github
+          text: munozt0
+          href: https://github.com/munoztd0
+        - icon: twitter
+          text: tord_munoz
+          href: https://x.com/tord_munoz    
+    - name: Skills
+      items:
+        - text: R
+          exp: 
+            text: "9 yrs."
+            num: 1
+        - text: Python
+          exp: 
+            text: "5 yrs."
+            num: 0.7
+        - text: JavaScript
+          exp: 
+            text: "3 yrs."
+            num: 0.5
+        - text: Bash
+          exp: 
+            text: "7 yr."
+            num: 0.9
+        - text: SQL
+          exp: 
+            text: "4 yrs."
+            num: 0.5
+        - text: Matlab
+          exp: 
+            text: "4 yr."
+            num: 0.5
+        - text: Data Analysis
+          exp: 
+            text: "9 years"
+            num: 0.9
+        - text: Data Engineering
+          exp: 
+            text: "5 yrs."
+            num: 0.6
+        - text: Web Development
+          exp: 
+            text: "4 years"
+            num: 0.5
+    - name: Frameworks
+      items:
+        - R Shiny
+        - TensorFlow
+        - Keras
+        - PyTorch
+        - Rstan
+        - Scikit-learn
+        - tidymodels
+    - name: Tools/Paradigms
+      items:
+        - Git
+        - Terminal 
+        - Docker
+        - CI/CD
+        - AWS
+        - ML OPS
+        - ETL
+    - name: Education
+      items:
+        - text: "Ph.D. Candidate in Computal Neuroscience"
+          inst: "University of Geneva"
+          time: "03/2020 - 01/2022"
+          details: "Topic: Computational modeling of addiction using neuroimaging data"
+        - text: "MSc in Neuroscience"
+          inst: "University of Geneva"
+          time: "09/2018 - 03/2020"
+          details: "Thesis: Denoising of high resolution fMRI signal using tICA"
+        - text: "Complementary Studies in Computer Science"
+          inst: "Smith College"
+          time: "09/2017 - 06/2018"
+          details: "Capstone: Machine Learning for neuroimaging data"
+        - text: "BSc in Cognitive Science"
+          inst: "University of Geneva"
+          time: "09/2014 - 06/2017"
+          details: "Thesis: Early detection of ASD"
+execute: 
+  echo: false
+---
+
+```{r}
+#| label: cvevents
+cvevents <- function(tbl, when, what, where, descr) {
+
+    command_start <- "\\cvevent"
+    tbl[[where]] <- gsub("\n", " \\\\newline ", tbl[[where]])
+    res <- paste0(
+        command_start, "{", tbl[[when]], "}", 
+        "{", tbl[[what]], "}",
+        "{", tbl[[where]], "}",
+        "{", tbl[[descr]], "}"
+        )
+
+    cat(res, sep = "\n\n\n")
+}
+
+cvproj <- function(tbl,what,role,items){
+    command_start <- "\\cvproj"
+    res <- paste0(
+        command_start, "{", tbl[[what]], "}",
+        "{", tbl[[role]], "}",
+        "{", sapply(tbl[[items]], function(x)paste0(x,collapse = ", ")), "}"
+    )
+
+    cat(res, sep = "\n\n\n")
+}
+```
+
+# Summary
+
+Data Scientist with 9 years of experience in the analysis of all sorts of data. I have a strong background in hierarchical modeling and I am an expert in R. I am passionate about Open Science and I am experienced in building and maintaining open source projects. I am a team player and I have experience in leading and coordinating projects.
+
+# Experience
+
+```{r}
+#| label: experience
+#| output: asis
+tibble::tribble(
+    ~role, ~institution, ~dates, ~details,
+    "Freelancer - Data Scientist", "EPFL Collaboration", "10/2022 - Present", "Led the development and launch of a scientific project, transitioned scripts into a SaaS solution, and offered technical consulting services to startups in cognitive technologies.",
+    "FlowBank - Full Stack Data Scientist", "FlowBank", "01/2023 - 01/2024", "Analyzed customer data using Bayesian inference, designed ETL workflows, and developed internal tools for data analysts.",
+    "FlowBank - R Developer/Data Engineer", "FlowBank", "04/2022 - 01/2023", "Implemented statistical models to detect fraudulent transactions, designed data visualization dashboards, and led the development of data science infrastructure.",
+    "University of Geneva - Lecturer in Statistics", "Master of Neurosciences program", "09/2020 - 01/2022", "Conducted statistics lectures, developed course materials, mentored graduate students, and shared data workshops in R and Python."
+) |>
+    cvevents(when = "dates", what = "role", where = "institution", descr = "details")
+```
+
+# Projects
+
+See my [github profile](https://github.com/schochastics) for a comprehensive list of open source projects.
+
+```{r}
+#| label: proj
+#| output: asis
+tibble::tribble(
+    ~what, ~role, ~items,
+    "R packages", "Creator and Maintainer", c("edgebundle", "graphlayouts", "levelnet", "netrankr", "netUtils", "networkdata", "PSAWR", "roughnet", "roughsf", "rtoot", "Rtumblr", "signnet", "snahelper", "webbotparseR", "webtrackR"),
+    "R packages", "Contributor", c("backbone", "ggraph", "multigraphr", "netropy", "rang", "rgraph6"),
+    "Quarto extensions", "Creator and Maintainer",
+    c("Academicons (shortcodes)", "Blackboard (revealjs theme)", "sketchy (html theme)", "share buttons (filter)", "nutshell (filter)", "quartocities (website template)", "quartocv (cv templates)"),
+    "soccerverse.com (football analytics website)", "Creator and Maintainer",
+    c(
+        "Manual and automated gathering of football results around the world",
+        "Harmonizing data (e.g. club names and managers)",
+        "Implementation of ranking algorithms",
+        "Predicting of league tables and matchforecasting",
+        "Uses R, JavaScript, HTML, and CSS",
+        "around 1000 visitors/month"
+    )
+) |>
+    cvproj(what = "what", role = "role", items = "items")
+
+```
