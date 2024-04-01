@@ -65,28 +65,27 @@ sidebar:
           exp: 
             text: "5 yrs."
             num: 0.6
-        - text: Web Development
+        - text: Data Visualization
           exp: 
-            text: "4 years"
-            num: 0.5
+            text: "7 years"
+            num: 0.9
     - name: Libraries
       items:
-        - R Shiny
-        - TensorFlow
-        - Keras
-        - PyTorch
-        - Rstan
-        - Scikit-learn
-        - tidymodels
+        - echarts, ggplot2, plotly, seaborn
+        - R Shiny, Dash, Streamlit
+        - tidyverse, data.table, dplyr
+        - TensorFlow, Keras, PyTorch, Scikit-learn
+        - Rstan, brms, JAGS
+        - H2O, XGBoost, LightGBM
+        - tidymodels, caret, mlr
     - name: Tools/Frameworks
       items:
-        - Git
-        - Terminal 
+        - Git, Terminal 
         - Docker
         - CI/CD
         - AWS
         - ML OPS
-        - ETL
+        - ETL, NIFI
     - name: Education
       items:
         - text: "Ph.D. Candidacy in Computational Neuroscience"
@@ -316,7 +315,7 @@ See my \href{https://github.com/munoztd0}{\underline{github profile}} for a more
 See my \href{https://github.com/munoztd0/publications/tree/master}{\underline{publications pages}} for a comprehensive list my scientific publications.
 
 
-<!-- <br> -->
+<br>
 
 <!-- **Investigating the effect of liraglutide on self-reported liking and -->
 <!-- neural responses to food stimuli.** Coppin, G., Munoz Tord, D., Pool, -->
