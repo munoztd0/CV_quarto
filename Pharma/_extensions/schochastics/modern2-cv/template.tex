@@ -29,7 +29,7 @@
 %
 %============================================================================%
 
-\documentclass[10pt,A4,english]{article}	
+\documentclass[3pt,A4,english]{article}	
 
 
 %----------------------------------------------------------------------------------------
@@ -45,10 +45,12 @@
 %----------------------------------------------------------------------------------------
 %	LOGIC
 %----------------------------------------------------------------------------------------
+\def\labelitemi{}
 
 % provides \isempty test
 \usepackage{xstring, xifthen}
 \usepackage{enumitem}
+\setlist[itemize]{nosep, leftmargin=0.5em, itemsep=0.5em, before=\fontsize{9}{12}\selectfont } % Align bullet with first line
 \usepackage[english]{babel}
 \usepackage{blindtext}
 \usepackage{pdfpages}
@@ -233,6 +235,9 @@ $endif$
 
 
 
+
+
+
 % Package for links, must be the last package used
 \usepackage[hidelinks]{hyperref}
 
@@ -283,16 +288,16 @@ $endif$
 % param 1: section title
 \newlength{\barw}
 \newcommand{\cvsection}[1] {
-	\vspace{14pt}
+	\vspace{10pt}
 	\settowidth{\barw}{\textbf{\LARGE #1}}
 	\cvtext{
 		\textbf{\LARGE{\textcolor{darkcol}{#1}}}\\[-4pt]
-		\textcolor{accentcol}{ \rule{\barw}{1.5pt} } \\
+		\textcolor{accentcol}{ \rule{\barw}{1.5pt} }
 	}
 }
 
 \newcommand{\cvsubsection}[1] {
-	\vspace{14pt}
+	\vspace{4pt}
 	\settowidth{\barw}{\textbf{\Large #1}}
 	\cvtext{
 		\textbf{\Large{\textcolor{darkcol}{#1}}}\\[-4pt]
@@ -301,7 +306,7 @@ $endif$
 }
 
 \newcommand{\cvheadline}[1] {
-	\vspace{16pt}
+	\vspace{13pt}
 	\cvtext{
 		\textbf{\Huge{\textcolor{accentcol}{#1}}}\\[-4pt]
 		 
@@ -309,7 +314,7 @@ $endif$
 }
 
 \newcommand{\cvsubheadline}[1] {
-	\vspace{16pt}
+	\vspace{13pt}
 	\cvtext{
 		\textbf{\huge{\textcolor{darkcol}{#1}}}\\[-4pt]
 		 
@@ -351,7 +356,7 @@ $endif$
 % param 5: work done (optional)
 % param 6: technologies include (optional)
 % param 7: achievements (optional)
-\newcommand{\cvevent}[4] {
+\newcommand{\cvevent}[3] {
 	
 	% we wrap this part in a parbox, so title and description are not separated on a pagebreak
 	% if you need more control on page breaks, remove the parbox
@@ -359,28 +364,16 @@ $endif$
 		\begin{tabular*}{1\mpwidth}{p{0.66\mpwidth}  r}
 	 		\textcolor{black}{\textbf{#2}} & \colorbox{accentcol}{\makebox[0.32\mpwidth]{\textcolor{white}{\textbf{#1}}}} \\
 			\textcolor{maincol}{#3} & \\
-		\end{tabular*}\\[8pt]
-	
-		\ifthenelse{\isempty{#4}}{}{
-			\cvtext{#4}\\
-		}
-	}
-	\vspace{14pt}
-}
-
-\newcommand{\cvproj}[3] {
-	\parbox{\mpwidth}{
-		\begin{tabular*}{1\mpwidth}{p{0.66\mpwidth}  r}
-	 		\textcolor{black}{\textbf{#1}} & \\
-			\textcolor{maincol}{#2} & \\
 		\end{tabular*}\\[4pt]
 	
-		\ifthenelse{\isempty{#3}}{}{
-			\cvtext{#3}\\
-		}
+		% \ifthenelse{\isempty{#4}}{}{
+		% 	\cvtext{#4}\\
+		% }
 	}
-	\vspace{14pt}
+	\vspace{0pt}
 }
+
+
 
 %----------------------------------------------------------------------------------------
 %	 CV META EVENT
@@ -395,14 +388,13 @@ $endif$
 	\textcolor{maincol} { \cvtext{\textbf{\begin{flushleft}#1\end{flushleft}}}}
 
 	\ifthenelse{\isempty{#2}}{}{
-	\textcolor{black} {\cvtext{\textbf{#2}} }
+	\textcolor{black} {\cvtext{{#2}} }
 	}
-
 	\ifthenelse{\isempty{#3}}{}{
-		\cvtext{{ \textcolor{maincol} {#3} }}\\
+		\cvtext{{ \textcolor{maincol} {#3} }}
 	}
 
-	\cvtext{#4}\\[14pt]
+	\cvtext{#4}\\[4pt]
 }
 
 %---------------------------------------------------------------------------------------
@@ -426,8 +418,8 @@ $endif$
   (current page.north west) -- (current page.north east) --
   ([yshift=50pt]current page.north east|-current page text area.north east) --
   ([yshift=50pt,xshift=-3cm]current page.north|-current page text area.north) --
-  ([yshift=10pt,xshift=-5cm]current page.north|-current page text area.north) --
-  ([yshift=10pt]current page.north west|-current page text area.north west) -- cycle;
+  ([yshift=3pt,xshift=-5cm]current page.north|-current page text area.north) --
+  ([yshift=3pt]current page.north west|-current page text area.north west) -- cycle;
 \node[font=\sffamily\bfseries\color{white},anchor=west,
   xshift=0.7cm,yshift=-0.32cm] at (current page.north west)
   {\fontsize{12}{12}\selectfont {#1}};
@@ -440,8 +432,8 @@ $endif$
   (current page.south east) -- (current page.south west) --
   ([yshift=-80pt]current page.south east|-current page text area.south east) --
   ([yshift=-80pt,xshift=-6cm]current page.south|-current page text area.south) --
-  ([xshift=-2.5cm,yshift=-10pt]current page.south|-current page text area.south) --	
-  ([yshift=-10pt]current page.south east|-current page text area.south east) -- cycle;
+  ([xshift=-2.5cm,yshift=-3pt]current page.south|-current page text area.south) --	
+  ([yshift=-3pt]current page.south east|-current page text area.south east) -- cycle;
 \node[yshift=0.32cm,xshift=9cm] at (current page.south) {\fontsize{10}{10}\selectfont \textbf{\thepage}};
 \end{tikzpicture}%
 }
@@ -466,8 +458,8 @@ $endif$
 
 
 % LEBENSLAUF HIERE
-\AtBeginShipoutFirst{\Header{CV}\Footer{1}}
-\AtBeginShipout{\AtBeginShipoutAddToBox{\Header{CV}\Footer{2}}}
+\AtBeginShipoutFirst{\Header{$author$}\Footer{1}}
+\AtBeginShipout{\AtBeginShipoutAddToBox{\Header{$author$}\Footer{2}}}
 
 \newpage
 
@@ -481,16 +473,16 @@ $endif$
 		%	META IMAGE
 		%----------------------------------------------------------------------------------------
 		\includegraphics[width=\linewidth]{$sidebar.image$}
-		\fcolorbox{white}{white}{\begin{minipage}[c][1.5cm][c]{1\mpwidth}
-				\LARGE{\textbf{\textcolor{maincol}{$author$}}} \\[2pt]
-				\normalsize{ \textcolor{maincol} {$jobtitle$} }
-			\end{minipage}}
+		% \fcolorbox{white}{white}{\begin{minipage}[c][1.5cm][c]{1\mpwidth}
+		% 		\LARGE{\textbf{\textcolor{maincol}{$author$}}} 
+				% \normalsize{ \textcolor{maincol} {$jobtitle$} }
+			% \end{minipage}}
 
 		%---------------------------------------------------------------------------------------
 		%	META SKILLS
 		%----------------------------------------------------------------------------------------
 		$for(sidebar.bullets)$
-		\icontext{caret-right}{12}{$it$}\\[6pt]
+		\icontext{caret-right}{12}{$it$}\\[3pt]
 		$endfor$
 
 		$for(sidebar.sections)$
@@ -499,15 +491,15 @@ $endif$
 
 		$for(sidebar.sections.items)$
 		$if(sidebar.sections.items.exp)$
-		\cvskill{$sidebar.sections.items.text$}{$sidebar.sections.items.exp.text$}{$sidebar.sections.items.exp.num$} \\[10pt]
+		\cvskill{$sidebar.sections.items.text$}{$sidebar.sections.items.exp.text$}{$sidebar.sections.items.exp.num$} \\[0pt]
 		$elseif(sidebar.sections.items.inst)$
-		\cvmetaevent{$sidebar.sections.items.time$}{$sidebar.sections.items.text$}{$sidebar.sections.items.inst$}{$sidebar.sections.items.details$}
+		\cvmetaevent{$sidebar.sections.items.text$}{$sidebar.sections.items.time$}{$sidebar.sections.items.inst$}{$sidebar.sections.items.details$}
 		$elseif(sidebar.sections.items.href)$
-		\iconhref{$sidebar.sections.items.icon$}{16}{$sidebar.sections.items.text$}{$sidebar.sections.items.href$}\\[6pt]
+		\iconhref{$sidebar.sections.items.icon$}{16}{$sidebar.sections.items.text$}{$sidebar.sections.items.href$}\\[0pt]
 		$elseif(sidebar.sections.items.icon)$
-		\icontext{$sidebar.sections.items.icon$}{16}{$sidebar.sections.items.text$}\\[6pt]
+		\icontext{$sidebar.sections.items.icon$}{16}{$sidebar.sections.items.text$}\\[0pt]
 		$else$
-		\icontext{caret-right}{12}{$it$}\\[6pt]
+		\icontext{caret-right}{12}{$it$}\\[0pt]
 		$endif$
 		$endfor$
 		$endfor$
