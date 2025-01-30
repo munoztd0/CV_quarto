@@ -20,8 +20,8 @@ sidebar:
         - icon: envelope
           text: david.munoztord@mailbox.org
         - icon: home
-          text: david-munoztord.com
-          href: https://david-munoztord.com
+          text: david-munoztord.online
+          href: https://david-munoztord.online
         - icon: github
           text: munozt0
           href: https://github.com/munoztd0

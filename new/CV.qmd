@@ -1,0 +1,244 @@
+---
+title: Untitled
+format:
+  modern2-cv-pdf: default
+author: David Munoz-Tord
+cvfont: raleway
+cvcolor: 
+  main: B83B5E
+  accent: 6A2C70
+sidebar:
+  image: portrait.jpg
+  sections: 
+    - name: 
+      items:
+        - icon: map-marker
+          text: Geneva, Switzerland
+        - icon: envelope
+          text: david.munoztord@mailbox.org
+        - icon: home
+          text: david-munoztord.online
+          href: https://david-munoztord.online
+        - icon: github
+          text: munozt0
+          href: https://github.com/munoztd0
+        - icon: linkedin
+          text: david-munoz-tord
+          href: https://www.linkedin.com/in/david-munoz-tord-409639150/
+    - name: Technical Skills
+      items:
+        - text: Machine Learning
+          exp: 
+            text: "7 yrs."
+            num: 0.9
+        - text: Statistical Inference
+          exp: 
+            text: "9 yrs."
+            num: 1
+        - text: R
+          exp: 
+            text: "9 yrs."
+            num: 1
+        - text: Python/TensorFlow
+          exp: 
+            text: "5 yrs."
+            num: 0.7
+        - text: Git/CI-CD
+          exp: 
+            text: "7 yrs."
+            num: 0.9
+        - text: Technical Training
+          exp: 
+            text: "4 yrs."
+            num: 0.6
+    - name: ML & Statistical Skills
+      items:
+        - Machine Learning
+        - Statistical inference
+        - Clinical data analysis
+        - Medical Statistics
+        - Bayesian Statistics
+    - name: Tools & Software
+      items:
+        - R, Python, TensorFlow
+        - PyTorch, scikit-learn
+        - Statistical dashboards
+        - Data visualization
+        - Version control/ CI-CD
+        - Reproducible workflows
+    - name: Education
+      items:
+        - text: "Ph.D. Candidacy in Computational Neuroscience"
+          inst: "Campus Biotech - Switzerland"
+          time: "03/2020 - 01/2022"
+          details: "Focus: Statistical modeling and causal inference"
+        - text: "MSc in Statistical Science"
+          inst: "University of Geneva - Switzerland"
+          time: "09/2018 - 03/2020"
+          details: "Thesis: Machine learning methods for medical imaging"
+        - text: "Complementary Studies in Statistics"
+          inst: "Smith College - USA"
+          time: "09/2017 - 06/2018"
+        - text: "BSc in Cognitive Science & Statistics"
+          inst: "University of Geneva - Switzerland"
+          time: "09/2014 - 06/2017"
+          details: "Focus: Medical statistics and ML"
+    - name: Languages
+      items:
+        - text: French
+          exp: 
+            text: "Native"
+            num: 1
+        - text: Spanish
+          exp: 
+            text: "Native"
+            num: 1
+        - text: English
+          exp: 
+            text: "Fluent"
+            num: 1
+    - name: Extracurricular
+      items:
+          - icon: share-alt
+            text: "Top 2% on \\href{https://stackoverflow.com/users/13158839/david-muñoz-tord}{\\underline{StackOverflow}} (2024)"
+          - icon: github
+            text: "Top 25% on \\href{https://github-readme-stats-sigma-five.vercel.app/api?username=munoztd0&rank_icon=percentile&theme=radical}{\\underline{GitHub }} (2023)"
+          - icon: award
+            text: "Organized multiple healthcare hackathons (2020-2023)"
+          - icon: bicycle
+            text: "Co-founder of \\href{https://go-fast.ch}{\\underline{Go-Fast}}, a socially responsible Bike Messenger cooperative in Geneva."
+---
+# Summary
+
+Results-driven Statistical Research Engineer with extensive experience in machine learning, causal inference, and healthcare data analysis. 
+Proven expertise in developing production-ready ML solutions and providing technical training to clinical teams. 
+Strong background in federated learning and reproducible research practices using R, Python, and TensorFlow. 
+Demonstrated ability to work with medical partners and communicate technical concepts effectively. 
+Passionate about developing innovative statistical solutions for personalized medicine.
+
+# Experience
+
+\cvevent{04/2024 - Present}{Lead Statistical Analyst}{EcoCalc - Environmental Analytics Platform}
+
+-   -- Developed causal machine learning methodologies for analyzing complex environmental datasets
+
+-   -- Implemented federated learning workflows using R, Python, and TensorFlow
+
+-   -- Created comprehensive ML pipelines and technical documentation for production deployment
+
+-   -- Conducted statistical inference and validation across multiple data sources
+
+-   -- Designed and maintained quality control procedures for sensitive data
+
+-   -- Collaborated with international agencies to standardize ML approaches
+
+<br>
+
+\cvevent{10/2022 - 04/2024}{Statistical \& Data Science Consultant}{Biotech \& Technological Sectors}
+
+-   -- Led ML projects for biotech clients, implementing machine learning solutions
+
+-   -- Developed reproducible ML workflows for data analysis using TensorFlow and PyTorch
+
+-   -- Created comprehensive technical documentation and training materials for teams
+
+-   -- Provided technical training to teams on ML methods and best practices
+
+-   -- Designed interactive data dashboards for medical data visualization
+
+<br>
+
+\cvevent{04/2022 - 01/2024}{Statistics \& Data Analyst}{FlowBank}
+
+-   -- Led development of ML models using PyTorch and TensorFlow
+
+-   -- Developed reproducible workflows for production deployment
+
+-   -- Created comprehensive ML documentation using R and RMarkdown
+
+-   -- Implemented causal inference methods for risk assessment
+
+-   -- Provided technical training to team members on ML methods
+
+-   -- Collaborated with international stakeholders on ML projects
+
+<br>
+
+\cvevent{09/2020 - 01/2022}{Lecturer in Biostatistics}{University of Geneva}
+
+-   -- Taught ML methods and causal inference to graduate students
+
+-   -- Developed training materials for R, Python, and TensorFlow
+
+-   -- Supervised student research projects involving clinical data analysis
+
+-   -- Created freely available ML workshops and tutorials
+
+-   -- Mentored students in healthcare data analysis
+
+<br>
+
+\cvevent{03/2020 - 01/2022}{Research Statistician}{Novo Nordisk - Campus Biotech}
+
+-   -- Conducted ML analysis of large-scale clinical data
+
+-   -- Applied causal inference and federated learning methods
+
+-   -- Developed reproducible ML pipelines using R and Python
+
+-   -- Wrote technical documentation for medical applications
+
+-   -- Collaborated with international clinical research teams
+
+-   -- Secured research grants for ML healthcare projects
+
+<br>
+
+# Projects
+
+See my \href{https://github.com/munoztd0}{\underline{github profile}} for a more comprehensive list of open source projects.
+
+<br>
+
+\cvevent{We Data}{Co-President}{R, Python, ML, Training}
+
+-- \href{https://wedata.ch/}{\underline{We Data}} is a data science organization focusing on knowledge sharing through blog, YouTube, hackathons and workshops. Organized multiple healthcare hackathons and ML training sessions.
+
+<br>
+
+\cvevent{DbVieweR}{Creator}{R, SQL, Full-Stack Development}
+-- Developed a comprehensive Shiny-based database management system with focus on healthcare data
+\href{https://github.com/munoztd0/DbVieweR}{\underline{[GitHub]}}. Implemented robust authentication and privacy-preserving features.
+
+<br>
+
+\cvevent{hBayesDM}{Collaborator}{STAN, R, Python, Healthcare ML}
+-- Contributed to hierarchical Bayesian modeling library for clinical decision-making \href{https://github.com/CCS-Lab/hBayesDM}{\underline{[GitHub]}}. Implemented causal inference algorithms and developed ML techniques for medical research.
+
+<br>
+
+\cvevent{echarts4r}{Collaborator/Maintainer}{R, JavaScript, Medical Visualization}
+-- Expanded interactive visualization capabilities for medical data \href{https://echarts4r.john-coene.com/}{\underline{[Project Website]}}. Developed high-performance rendering engine for clinical data visualization.
+
+<br>
+
+\cvevent{fiRebase}{Collaborator/Maintainer}{R, JavaScript, Healthcare Data}
+-- Created comprehensive Firebase integration package for secure medical data handling \href{https://firebase.john-coene.com/}{\underline{[Project Website]}}. Implemented privacy-preserving authentication and storage mechanisms.
+
+<br>
+
+# Publications
+
+See my \href{https://github.com/munoztd0/publications/tree/master}{\underline{publications page}} for a comprehensive list of publications and technical reports.
+
+<br>
+
+# Professional References
+
+-   \href{https://www.linkedin.com/in/psaouter}{\underline{Pierre Saouter}}[{{< fa envelope >}}](pierre@the-y-company.com), **Head of Statistical Analysis at FlowBank**
+
+-   \href{https://genev.unige.ch/research/people/Jose-Manuel-De-Abreu-Nunes}{\underline{Jose Nunes}}[{{< fa envelope >}}](Jose.deAbreuNunes@unige.ch), **Professor of Biostatistics, University of Geneva**
+
+-   \href{https://www.unige.ch/cisa/center/members/meuleman-ben}{\underline{Ben Meuleman}}[{{< fa envelope >}}](Ben.Meuleman@unige.ch), **Statistician at University of Geneva**
+
+-   \href{https://www.researchgate.net/profile/Eva-Pool}{\underline{Eva R. Pool }}[{{< fa envelope >}}](Eva.Pool@unige.ch), **Computational Neuroscience Professor at Campus Biotech**

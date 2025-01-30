@@ -20,8 +20,8 @@ sidebar:
         - icon: envelope
           text: david.munoztord@mailbox.org
         - icon: home
-          text: david-munoztord.com
-          href: https://david-munoztord.com
+          text: david-munoztord.online
+          href: https://david-munoztord.online
         - icon: github
           text: munozt0
           href: https://github.com/munoztd0
@@ -44,7 +44,7 @@ sidebar:
         - text: SQL
           exp: 
             text: "5 yrs."
-            num: 0.7be
+            num: 0.7
         - text: JavaScript
           exp: 
             text: "3 yrs."
@@ -173,9 +173,9 @@ cvevents <- function(tbl, when, what, where, descr) {
 <!-- of data. I have a strong background in hierarchical modeling and I am an -->
 <!-- expert in R. I am passionate about Open Science and I am experienced in -->
 <!-- building and maintaining open source projects. I am a team player and I -->
-<!-- have experience in leading and coordinating projects. -->
+<!-- have experience in leading and coordinating projects.Experienced in developing and deploying comprehensive data solutions, collaborating with cross-functional teams, and leading innovative projects -->
 
-Dynamic and results-driven Data Engineer with a strong background in neuroscience, statistics, and data science. Experienced in developing and deploying comprehensive data solutions, collaborating with cross-functional teams, and leading innovative projects. Proficient in a wide range of programming languages and machine learning frameworks. Dedicated to continuous learning and staying at the forefront of technology trends.
+Dynamic and results-driven researcher with a strong background in neuroscience, statistics, and data science. Proficient in a wide range of programming languages and machine learning frameworks. Dedicated to continuous learning and staying at the forefront of technology trends.
 
 
 

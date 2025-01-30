@@ -1,0 +1,67 @@
+# Summary of Research Field, Skills, and Portfolio
+
+## David Munoz-Tord
+
+### Main Portfolio Links:
+- [Portfolio Website](https://david-munoztord.online)
+- [GitHub](https://github.com/munoztd0)
+
+### Research Field Summary:
+
+I specialize in the intersection of social cognitive neuroscience and behavioral sciences, with a focus on understanding the cognitive and affective processes underlying human behavior. My research explores the neural mechanisms of decision-making, social cognition, and emotional processing, shedding light on how these processes influence behavior and drive social interactions. By leveraging advanced statistical analysis and experimental methodologies, I uncover insights into behavioral patterns and neural responses, contributing to a deeper understanding of human behavior and cognition.
+
+
+### List of Publications:
+
+1. **Investigating the effect of liraglutide on self-reported liking and neural responses to food stimuli.**
+   - *Journal: Journal of Obesity (2023)*
+   - [Read Paper](https://www.nature.com/articles/s41366-023-01370-w)
+
+2. **Differential contributions of ventral striatum subregions to the motivational and hedonic components of the affective processing of reward.**
+   - *Journal: Journal of Neuroscience (2022)*
+   - [Read Paper](https://doi.org/10.1523/JNEUROSCI.1124-21.2022)
+
+3. **3D-printed pacifier-shaped mouthpiece for fMRI-compatible gustometers.**
+   - *Journal: Eneuro (2021)*
+   - [Read Paper](https://dx.doi.org/10.1523\%2FENEURO.0208-21.2021)
+
+4. **Early spatial attention deployment towards aggressive voices.**
+   - *Journal: Social Cognitive and Affective Neuroscience (2019)*
+   - [Read Paper](https://doi.org/10.1093/scan/nsy100)
+   
+#### Freelancing and Consulting:
+
+- **Technical Consulting at DuckRabbit**
+Provided technical consulting services to [DuckRabbit](https://duckrabbit.ch/en/), a Swiss startup specializing in cognitive and educational technologies. Collaborated to translate academic research from cognitive neuroscience and developmental psychology into tangible solutions, offering expertise in machine learning implementations.
+
+- **Data Reporting Infrastructure at CICAD**
+Collaborated with cross-functional teams within the [CICAD](https://cicad.ch/) to establish and maintain a data reporting infrastructure. Focused on survey data analysis and sentiment analysis applications, implementing best practices for process automation to improve data management and reporting workflows.
+
+- **EPFL Project Development**
+Led the development and launch of a scientific project in partnership with [EPFL](https://www.epfl-innovationpark.ch/), transforming initial scripts into a user-friendly software accessible to clients via cloud services. Direct link to the [GitHub repository](https://github.com/munoztd0/Simorgh).
+
+- **Freelancing Projects at [Opifex](https://opifex.org/)**
+Active maintainenance of [echarts4r](https://echarts4r.john-coene.com/), a powerful R package that enhances interactive data visualizations with a versatile rendering engine. And contributed extensively to the [fiRebase](https://firebase.john-coene.com/) package for R, empowering the Shiny user community with user authentication and secure file storage through Google Firebase API
+
+
+
+#### Projects:
+
+- [Shiny Dashboard for ProVelo:](https://munoztd0.shinyapps.io/RoadKillsGeneva/) An interactive Shiny dashboard developed in collaboration with [ProVelo](https://en.pro-velo.ch/) to enhance road safety analysis in Geneva. This state-of-the-art platform offers insights and comprehensive accident data visualization, catering to a wide range of users, from policymakers to data enthusiasts.
+
+
+- [We Data Organization:](https://wedata.ch/) Co-President of We Data, an organization dedicated to sharing knowledge on data science, conducting statistics workshops, and organizing coding demonstrations. We also host the [R-Lunches](https://use-r-carlvogt.github.io/prochains-lunchs/) to foster learning and collaboration in the data science community.
+
+- [hBayesDM Collaboration](https://github.com/CCS-Lab/hBayesDM): Collaborated on the hBayesDM package, a computational modeling tool for behavioral data analysis. Involved in building the Q-learning algorithm for probabilistic selection tasks.
+
+- [Computational Modeling Methods](https://github.com/munoztd0/Computational-Modelling): Developed methods for the computational modeling of behavioral data, demonstrating proficiency in advanced analysis techniques.
+
+- [REBUND](https://github.com/munoztd0/Rebund): Experiment framework in JavaScript using lab.js and Pavlovia integration to investigate cognitive and affective behavioural responses related to rewards.
+
+
+- [DbVieweR - Database Management for R](https://github.com/munoztd0/DbVieweR): Creator of the Shiny app simulating a database management system with features like login authentication, table operations, and column management using PostgreSQL or SQLite back-end.
+
+- [reprtree](https://github.com/araastat/reprtree): Collaborator on integrating the caret ensemble for reprtree, implementing representative trees from ensembles of tree-based machines.
+
+- [3dLMEr - Linear Mixed-Effects Regression](https://github.com/afni/afni/blob/ebd2aef51c27cf7684f38f580e1db832b1ccf621/src/R_scripts/3dLMEr.R): Collaborator on the AFNI's functions for 3D Linear Mixed-Effects Regression. Improved residuals output by adding bottom tolerance.
+

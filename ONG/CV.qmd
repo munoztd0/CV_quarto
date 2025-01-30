@@ -20,8 +20,8 @@ sidebar:
         - icon: envelope
           text: david.munoztord@mailbox.org
         - icon: home
-          text: david-munoztord.com
-          href: https://david-munoztord.com
+          text: david-munoztord.online
+          href: https://david-munoztord.online
         - icon: github
           text: munozt0
           href: https://github.com/munoztd0
@@ -335,24 +335,27 @@ See my \href{https://github.com/munoztd0/publications/tree/master}{\underline{pu
 # References
 
 -   \href{https://www.linkedin.com/in/psaouter}{\underline{Pierre Saouter}}
-    [{{< fa envelope >}}](pierre@the-y-company.com), **Head of Data
-    Science at FlowBank**
+    [{{< fa envelope >}}](pierre@the-y-company.com), **Head of Data Science at FlowBank**
+    
+-   \href{https://john-coene.com}{\underline{John Coene}}
+    [{{< fa envelope >}}](john@opifex.org), **Founder and Lead developer at Opifex**
 
 -   \href{https://www.unige.ch/cisa/center/members/meuleman-ben}{\underline{Ben Meuleman}}
-    [{{< fa envelope >}}](Ben.Meuleman@unige.ch), **Statistician at
-    University of Geneva**
+    [{{< fa envelope >}}](Ben.Meuleman@unige.ch), **Statistician at University of Geneva**
+    
+    
+-   \href{}{\underline{Meirav Banon Skornik}}
+    [{{< fa envelope >}}](Meirav@cicad.ch), **Senior Analyst at CICAD**
 
--   \href{https://www.linkedin.com/in/david-sander-42801288}{\underline{David Sander}}
-    [{{< fa envelope >}}](David.Sander@unige.ch), **Director of the
-    Center for Affective Sciences**
+
+<!-- -   \href{https://www.linkedin.com/in/david-sander-42801288}{\underline{David Sander}} -->
+<!--     [{{< fa envelope >}}](David.Sander@unige.ch), **Director of the Center for Affective Sciences** -->
 
 -   \href{https://genev.unige.ch/research/people/Jose-Manuel-De-Abreu-Nunes}{\underline{Jose Nunes}}
-    [{{< fa envelope >}}](Jose.deAbreuNunes@unige.ch), **Professor of
-    Biostatistics at the University of Geneva**
+    [{{< fa envelope >}}](Jose.deAbreuNunes@unige.ch), **Professor of Biostatistics at the University of Geneva**
 
 -   \href{https://www.researchgate.net/profile/Eva-Pool}{\underline{Eva R. Pool}}
-    [{{< fa envelope >}}](Eva.Pool@unige.ch), **Senior Researcher at
-    Campus Biotech**
+    [{{< fa envelope >}}](Eva.Pool@unige.ch), **Professor at Campus Biotech**
 
 <!-- - \href{https://john-coene.com}{\underline{John Coene}} [{{< fa envelope >}}](john@opifex.org), **Founder and Lead developer at Opifex**  -->
 
@@ -360,6 +363,6 @@ See my \href{https://github.com/munoztd0/publications/tree/master}{\underline{pu
 
 <!-- {{< fa envelope >}} Jorge.figueredo@flowbank.com -->
 
-<!-- - **[Meirav Banon Skornik](https://genev.unige.ch/research/people/Jose-Manuel-De-Abreu-Nunes), Senior Analyst at the CICAD organization** -->
 
-<!-- {{< fa envelope >}} Meirav@cicad.ch -->
+
+<!-- {{< fa envelope >}}  -->

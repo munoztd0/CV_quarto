@@ -1,0 +1,374 @@
+---
+title: Untitled
+format:
+  modern2-cv-pdf: default
+author: David Munoz-Tord
+cvfont: raleway #texlive fonts like raleway,fetamont,gillius,comfortaa
+cvcolor: 
+  main: B83B5E
+  accent: 6A2C70
+# jobtitle: Data Scientist
+sidebar:
+  image: portrait.jpg
+  sections: 
+    - name: 
+      items:
+        - icon: map-marker
+          text: Geneva, Switzerland
+        # - icon: phone
+        #   text: "+41 79 244 1756"
+        - icon: envelope
+          text: david.munoztord@mailbox.org
+        - icon: home
+          text: david-munoztord.online
+          href: https://david-munoztord.online
+        - icon: github
+          text: munozt0
+          href: https://github.com/munoztd0
+        # - icon: twitter
+        #   text: tord_munoz
+        #   href: https://x.com/tord_munoz
+        - icon: linkedin
+          text: david-munoz-tord
+          href: https://www.linkedin.com/in/david-munoz-tord-409639150/
+    - name: Skills
+      items:
+        - text: R
+          exp: 
+            text: "6 yrs."
+            num: 0.7
+        - text: Python
+          exp: 
+            text: "3 yrs."
+            num: 0.4
+        - text: JavaScript
+          exp: 
+            text: "2 yrs."
+            num: 0.2
+        - text: Bash
+          exp: 
+            text: "5 yr."
+            num: 0.7
+        - text: SQL
+          exp: 
+            text: "2 yrs."
+            num: 0.2
+        - text: Matlab
+          exp: 
+            text: "4 yr."
+            num: 0.5
+        - text: Data Analysis
+          exp: 
+            text: "6 years"
+            num: 0.7
+        - text: Data Engineering
+          exp: 
+            text: "2 yrs."
+            num: 0.2
+        - text: Data Visualization
+          exp: 
+            text: "7 years"
+            num: 0.9
+    - name: Libraries
+      items:
+        - echarts, ggplot2, plotly, seaborn
+        - R Shiny, Dash, Streamlit
+        - tidyverse, data.table, dplyr
+        - TensorFlow, Keras, PyTorch, Scikit-learn
+        - Rstan, brms, JAGS
+        - H2O, XGBoost, LightGBM
+        - tidymodels, caret, mlr
+    - name: Tools/Frameworks
+      items:
+        - Git, Terminal 
+        - Docker
+        - CI/CD
+        - AWS
+        - ML OPS
+        - ETL, NIFI
+    - name: Education
+      items:
+        - text: "Ph.D. Candidacy in Computational Neuroscience"
+          inst: "Campus Biotech - Switzerland"
+          time: "03/2020 - 01/2022"
+          details: "Topic: Computational modeling of addiction using neuroimaging data"
+        - text: "MSc in Neuroscience"
+          inst: "University of Geneva - Switzerland"
+          time: "09/2018 - 03/2020"
+          details: "Thesis: Denoising of high resolution fMRI signal using tICA"
+        - text: "Complementary Studies in Computer Science"
+          inst: "Smith College - USA"
+          time: "09/2017 - 06/2018"
+          details: "Capstone: Machine Learning for neuroimaging data"
+        - text: "BSc in Cognitive Science"
+          inst: "University of Geneva - Switzerland"
+          time: "09/2014 - 06/2017"
+          details: "Thesis: Early detection of ASD event related potentials"
+    - name: Languages
+      items:
+        - text: French
+          exp: 
+            text: "Native"
+            num: 1
+        - text: Spanish
+          exp: 
+            text: "Native"
+            num: 1
+        - text: English
+          exp: 
+            text: "Fluent"
+            num: 1
+        - text: Japanese
+          exp: 
+            text: "Beginner"
+            num: 0.2
+    - name: Technical Skills
+      items:
+        - Data Sctuctures and Algorithms
+        - Data Mining 
+        - Machine Learning
+        - Linux System Administration
+        - Visualization for Scientific Data
+        - Spatial Analysis
+        - Bayesian Statitics
+    - name: Extracurricular
+      items:
+        - icon: share-alt
+          text: "Top 2% on \\href{https://stackoverflow.com/users/13158839/david-muñoz-tord}{\\underline{StackOverflow}} (2024)"
+        - icon: github
+          text: "Top 25% on \\href{https://github-readme-stats-sigma-five.vercel.app/api?username=munoztd0&rank_icon=percentile&theme=radical}{\\underline{GitHub }} (2023)"
+        - icon: award
+          text: "Global Fellow scholarship (2017)"
+        - icon: bicycle
+          text: "Co-founder of \\href{https://go-fast.ch}{\\underline{Go-Fast}}, a socially responsible Bike Messenger cooperative in Geneva."
+        # - icon: users
+        #   text: "Co-president of La Rustine, a non-profit organization promoting non-motorized mobility and self-sustainability in Switzerland."
+execute: 
+  echo: false
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+```{r}
+#| label: cvevents
+cvevents <- function(tbl, when, what, where, descr) {
+
+    command_start <- "\\cvevent"
+    tbl[[where]] <- gsub("\n", " \\\\newline ", tbl[[where]])
+    res <- paste0(
+        command_start, "{", tbl[[when]], "}", 
+        "{", tbl[[what]], "}",
+        "{", tbl[[where]], "}"#,
+        # "{", tbl[[descr]], "}"
+        )
+
+    cat(res, sep = "\n\n\n")
+}
+
+```
+
+# Summary
+
+<!-- Data Scientist with 9 years of experience in the analysis of all sorts -->
+<!-- of data. I have a strong background in hierarchical modeling and I am an -->
+<!-- expert in R. I am passionate about Open Science and I am experienced in -->
+<!-- building and maintaining open source projects. I am a team player and I -->
+<!-- have experience in leading and coordinating projects. -->
+
+Experienced Data Scientist with a background in neuroscience and a proven track record in data analysis, visualization, and management. Skilled in developing data systems and models to support decision-making processes. Strong communication skills and a collaborative approach to working with diverse teams. Fluent in English, proficient in Python, and R, with a keen interest in humanitarian work and data-driven solutions.
+
+
+# Experience
+
+\cvevent{04/2022 - 01/2024}{R Developer}{FlowBank}
+
+-   -- Contributed as a key member of the data migration to AWS cloud, ensuring seamless transfer, and scalability.
+
+-   -- Conducted in-depth analysis to classify customers using Bayesian inference, revealing distinct segments and patterns for data-driven decision-making and targeted strategies.
+
+-   -- Engineered and deployed a sophisticated fraud detection system, leveraging neural networks and support vector machines to accurately identify fraudulent activities.
+
+-   -- Developed new internal tools for data analysts in the form of R packages, and provided training and support for their use.
+
+-   -- Designed and implemented a datawarehouse solution for efficient data processing and orchestration, contributing to streamlined data engineering workflows.
+
+-   -- Led the development of a comprehensive ML-Ops infrastructure, leveraging AWS cloud infrastucture for seamless deployment and calability.
+    <!--# including Docker environments for Julia, R, and Python, and  -->
+
+-   -- Designed and maintained a data visualization dashboard in R Shiny, which allowed for easy monitoring of key performance
+    indicators.
+
+<br>
+
+\cvevent{09/2020 - 01/2022}{ Lecturer in Biotatistics}{University of Geneva}
+
+-   -- Conducted lectures on statistics for the graduate program and mentored students in their research projects, providing guidance on statistical analysis and data visualization.
+
+-   -- Created and shared freely available data
+    \href{https://github.com/munoztd0/teaching/blob/main/README.md}{\underline{workshops}} in R and Python.
+
+<br>
+
+\cvevent{03/2020 - 01/2022}{ PhD Candidate in Computational Neuroscience}{Campus Biotech}
+
+-   -- Processed terabytes of data for a large scale of longitudinal clinical trials (EEG/fMRI signal and blood samples).
+
+-   -- Used various \href{https://github.com/evapool/VS_AffectiveResponse/tree/myfeature/behavioral}{\underline{statistical methods}} to analyze large scale datasets: Hierarchical Bayesian modeling,
+Multivariate pattern analysis, and model-free reinforcement
+learning.
+
+-   -- Demonstrated commitment to medical data management protocols compliance and proficiency in grant acquisition.
+
+-   -- Collaborated with Caltech data engineers to implement \href{https://github.com/evapool/VS_AffectiveResponse/tree/main/preprocessing/03_FIX_denoise}{\underline{ICA-based denoiseification}} for better identification of activation and artifact components in fMRI.
+
+<br>
+
+\cvevent{03/2019 - 03/2020}{Internship in Computational Neuroscience}{Geneva Neurocenter}
+
+-   -- Developed and implemented \href{https://github.com/munoztd0/Computational-Modelling}{\underline{computational models}} to study neural system mechanisms and dynamics.
+
+- 
+
+<br> <br>
+
+
+
+# Projects
+
+See my \href{https://github.com/munoztd0}{\underline{github profile}} for a more comprehensive list of open source projects.
+
+
+<br>
+
+```{r}
+#| label: proj
+#| output: asis
+# tibble::tibble(
+#     role = c("Co-President", "Maintainer", "Maintainer", "Creator", "Collaborator", "Collaborator", "Collaborator"),
+#     institution = c("R, JavaScript and Python", "R, JavaScript", "R, JavaScript", "R, SQL", "R", "STAN, R, Python", "BASH, R"),
+#     dates =  c("We Data", "echarts4r", "Firebase", "DbVieweR", "reprtree", "hBayesDM", "3dLMEr")
+# ) |>
+#     cvevents(when = "dates", what = "role", where = "institution")
+
+```
+\cvevent{Pro Velo}{Volunteer}{R, JavaScript}
+
+
+-- Developed an interactive \href{https://munoztd0.shinyapps.io/RoadKillsGeneva/}{\underline{Shiny dashboard}}  with \href{https://en.pro-velo.ch/}{\underline{ProVelo}} to enhance road safety analysis in Geneva.
+State-of-the-art platform offers insights and comprehensive accident data visualization.
+Versatile tool caters to a wide range of users, from policymakers to data enthusiasts.
+
+<br>
+
+\cvevent{We Data}{Co-President}{R, Python, Rust, JavaScript}
+
+-- \href{https://wedata.ch/}{\underline{We Data}} is an organization that shares knowledge on code in data science (Blog, YouTube channel), give workshops about statistics, and do coding demonstrations. We also organize the \href{https://use-r-carlvogt.github.io/prochains-lunchs/}{\underline{R-Lunches}}.
+
+<br>
+
+\cvevent{echarts4r}{Maintainer}{R, JavaScript}
+
+-- Collaborated on the development of \href{https://echarts4r.john-coene.com/}{\underline{echarts4r}}, a R package that expands the capabilities of R-based interactive visualizations with a powerful rendering engine, while enhancing flexibility and ease of use.
+
+<br>
+
+\cvevent{hBayesDM}{Collaborator}{STAN, R, Python}
+
+-- Collaborated on the Hierarchical Bayesian modeling of Decision-Making tasks library (\href{https://github.com/CCS-Lab/hBayesDM}{\underline{hBayesDM}}). Built Q-learning algorithm for probabilistic selection task. 
+
+<br>
+
+\cvevent{Firebase}{Maintainer}{R, JavaScript}
+
+-- Contributed extensively to the \href{https://firebase.john-coene.com/}{\underline{firebase}} integration package for R, empowering the Shiny user community by enabling user authentication and secure file storage through Firebase Storage.
+
+<br>
+
+\cvevent{DbVieweR}{Creator}{R, SQL}
+
+-- Created a shiny app (\href{https://github.com/munoztd0/DbVieweR}{\underline{DbVieweR}}) simulating a database management system featuring functions like login authentication, save/create/delete tables, add/rename columns, using either a PostgreSQL or SQLite back-end.
+
+<br>
+
+\cvevent{reprtree}{Collaborator}{R}
+
+-- Integrated the caret ensemble for \href{https://github.com/araastat/reprtree}{\underline{reptree}} (implementation of representative trees from ensembles of tree-based machines).
+
+<br>
+
+\cvevent{3dLMEr}{Collaborator}{BASH, R}
+
+-- Collaborated on the AFNI’s functions for 3Dimensional Linear Mixed-Effects Regression (\href{https://github.com/afni/afni/blob/ebd2aef51c27cf7684f38f580e1db832b1ccf621/src/R_scripts/3dLMEr.R}{\underline{3dLMEr}}). Fixed residuals output image by adding bottom tolerance. 
+
+<br>
+
+
+
+# Publications
+
+See my \href{https://github.com/munoztd0/publications/tree/master}{\underline{publications pages}} for a comprehensive list my scientific publications.
+
+
+<br>
+
+<!-- **Investigating the effect of liraglutide on self-reported liking and -->
+<!-- neural responses to food stimuli.** Coppin, G., Munoz Tord, D., Pool, -->
+<!-- Cereghetti, D., Golay, A., Sander, D., & Pataky, Z. *Journal of Obesity* -->
+<!-- (2023) - -->
+<!-- \href{https://www.nature.com/articles/s41366-023-01370-w}{\underline{Paper}} -->
+
+<!-- <br> -->
+
+<!-- **Differential contributions of ventral striatum subregions to the -->
+<!-- motivational and hedonic components of the affective processing of -->
+<!-- reward.** Pool, E. R., Munoz Tord, D. , Delplanque, S., Stussi, Y., -->
+<!-- Cereghetti, D., Vuilleumier, P., & Sander, D. *Journal of Neuroscience* -->
+<!-- (2022) - -->
+<!-- \href{https://doi.org/10.1523/JNEUROSCI.1124-21.2022}{\underline{Paper}} -->
+
+<!-- <br> -->
+
+<!-- **3D-printed pacifier-shaped mouthpiece for fMRI-compatible -->
+<!-- gustometers.** Munoz Tord, D., Coppin, G., Pool, E. R., Mermoud, C., -->
+<!-- Pataky, Z., Sander, D., & Delplanque, S. *Eneuro* (2021) - -->
+<!-- \href{https://dx.doi.org/10.1523\%2FENEURO.0208-21.2021}{\underline{Paper}} -->
+
+<!-- <br> -->
+
+<!-- **Early spatial attention deployment towards aggressive voices.** Burra, -->
+<!-- N., Kerzel, D., Munoz Tord, D., Grandjean, D., & Ceravolo, L. *Social -->
+<!-- Cognitive and Affective Neuroscience* (2019) - -->
+<!-- \href{https://doi.org/10.1093/scan/nsy100}{\underline{Paper}} -->
+
+# References
+
+-   \href{https://www.linkedin.com/in/psaouter}{\underline{Pierre Saouter}}
+    [{{< fa envelope >}}](pierre@the-y-company.com), **Head of Data
+    Science at FlowBank**
+
+-   \href{https://www.unige.ch/cisa/center/members/meuleman-ben}{\underline{Ben Meuleman}}
+    [{{< fa envelope >}}](Ben.Meuleman@unige.ch), **Statistician at
+    University of Geneva**
+
+-   \href{https://www.linkedin.com/in/david-sander-42801288}{\underline{David Sander}}
+    [{{< fa envelope >}}](David.Sander@unige.ch), **Director of the
+    Center for Affective Sciences**
+
+-   \href{https://genev.unige.ch/research/people/Jose-Manuel-De-Abreu-Nunes}{\underline{Jose Nunes}}
+    [{{< fa envelope >}}](Jose.deAbreuNunes@unige.ch), **Professor of
+    Biostatistics at the University of Geneva**
+
+-   \href{https://www.researchgate.net/profile/Eva-Pool}{\underline{Eva R. Pool}}
+    [{{< fa envelope >}}](Eva.Pool@unige.ch), **Senior Researcher at
+    Campus Biotech**
+
+<!-- - \href{https://john-coene.com}{\underline{John Coene}} [{{< fa envelope >}}](john@opifex.org), **Founder and Lead developer at Opifex**  -->
+
+<!-- - **[Jorge Figueiredo](https://genev.unige.ch/research/people/Jose-Manuel-De-Abreu-Nunes), Head of Information Security at FlowBank** -->
+
+<!-- {{< fa envelope >}} Jorge.figueredo@flowbank.com -->
+
+<!-- - **[Meirav Banon Skornik](https://genev.unige.ch/research/people/Jose-Manuel-De-Abreu-Nunes), Senior Analyst at the CICAD organization** -->
+
+<!-- {{< fa envelope >}} Meirav@cicad.ch -->
