@@ -21,13 +21,10 @@ sidebar:
           text: david.munoztord@mailbox.org
         - icon: home
           text: david-munoztord.online
-          href: https://david-munoztord.online
+          href: https://munoztd0.github.io/homepage/
         - icon: github
           text: munozt0
           href: https://github.com/munoztd0
-        # - icon: twitter
-        #   text: tord_munoz
-        #   href: https://x.com/tord_munoz
         - icon: linkedin
           text: david-munoz-tord
           href: https://www.linkedin.com/in/david-munoz-tord-409639150/

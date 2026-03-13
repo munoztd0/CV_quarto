@@ -21,7 +21,7 @@ sidebar:
           text: david.munoztord@mailbox.org
         - icon: home
           text: david-munoztord.online
-          href: https://david-munoztord.online
+          href: https://munoztd0.github.io/homepage/
         - icon: github
           text: munozt0
           href: https://github.com/munoztd0
