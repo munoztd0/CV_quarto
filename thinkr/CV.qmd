@@ -3,17 +3,17 @@ title: Untitled
 format:
   modern2-cv-pdf: default
 author: David Munoz-Tord
-cvfont: raleway #texlive fonts like raleway,fetamont,gillius,comfortaa
+cvfont: raleway
 cvcolor:
   main: B83B5E
   accent: 6A2C70
 sidebar:
   image: portrait.jpg
   sections:
-    - name: Senior R Developer
+    - name: Développeur R
       items:
         - icon: map-marker
-          text: Geneva, Switzerland
+          text: Genève, Suisse
         - icon: envelope
           text: david.munoztord@mailbox.org
         - icon: home
@@ -25,46 +25,43 @@ sidebar:
         - icon: linkedin
           text: david-munoz-tord
           href: https://www.linkedin.com/in/david-munoz-tord-409639150/
-    - name: Skills
+    - name: Compétences
       items:
-        - text: R
-          exp: { text: "10 yrs.", num: 1 }
+        - text: R (Packages, Archi)
+          exp: { text: "10 ans", num: 1 }
+        - text: Docker & CI/CD
+          exp: { text: "5 ans", num: 0.8 }
         - text: Python
-          exp: { text: "5 yrs.", num: 0.8 }
+          exp: { text: "5 ans", num: 0.8 }
         - text: Bash
-          exp: { text: "7 yrs.", num: 0.9 }
-        - text: Docker
-          exp: { text: "5 yrs.", num: 0.8 }
-        - text: AWS (ECS / EC2)
-          exp: { text: "5 yrs.", num: 0.7 }
-    - name: Libraries
+          exp: { text: "7 ans", num: 0.9 }
+        - text: JavaScript
+          exp: { text: "2 ans", num: 0.4 }
+    - name: Librairies & Frameworks
       items:
-        - echarts, ggplot2, plotly, seaborn
-        - R Shiny, Dash, Streamlit
-        - tidyverse, data.table, dplyr
-        - TensorFlow, Keras, PyTorch, Scikit-learn
-        - Rstan, brms, JAGS
-        - H2O, XGBoost, LightGBM
-    - name: Tools/Frameworks
+        - Shiny (golem, rhino, leprechaun)
+        - devtools, testthat, roxygen2, renv
+        - tidyverse, data.table, ggplot2, plotly
+        - brms, XGBoost, Scikit-learn
+    - name: Outils
       items:
         - Git / BASH
-        - Powershell
         - Docker
-        - CI/CD
-        - AWS, Azure
-        - Posit
-    - name: Languages
+        - CI/CD (GitHub Actions, GitLab CI)
+        - Posit Server
+        - AWS
+    - name: Langues
       items:
-        - text: French
-          exp: { text: "Native", num: 1 }
-        - text: Spanish
-          exp: { text: "Native", num: 1 }
-        - text: English
-          exp: { text: "Fluent", num: 1 }
-        - text: German
-          exp: { text: "Passive", num: 0.4 }
-        - text: Italian
-          exp: { text: "Professional", num: 0.8 }
+        - text: Français
+          exp: { text: "Maternel", num: 1 }
+        - text: Anglais
+          exp: { text: "Courant", num: 1 }
+        - text: Espagnol
+          exp: { text: "Maternel", num: 1 }
+        - text: Japonais
+          exp: { text: "Passif", num: 0.4 }
+        - text: Allemand
+          exp: { text: "Passif", num: 0.4 }
 execute:
   echo: false
 editor:
@@ -73,7 +70,6 @@ editor:
 ---
 
 ```{r}
-#| label: cvevents
 cvevents <- function(tbl, when, what, where, descr) {
   command_start <- "\\cvevent"
   tbl[[where]] <- gsub("\n", " \\\\newline ", tbl[[where]])
@@ -84,7 +80,6 @@ cvevents <- function(tbl, when, what, where, descr) {
   )
   cat(res, sep = "\n\n\n")
 }
-```
 
 # Summary
 
@@ -92,47 +87,52 @@ Développeur R passionné par l'architecture logicielle, la mise en production e
 
 <!-- je cherche aujourd'hui à m'investir dans des projets techniques ambitieux où je pourrai allier développement rigoureux et partage de compétences. -->
 
-# Experience
+# Expérience
+\cvevent{02/2025 - Présent}{Développeur R Sénior}{Johnson & Johnson}
 
-\cvevent{02/2025 - Present}{Senior R Developer}{Johnson & Johnson}
+-  -- Leader technique de la transition stratégique de SAS vers R : pilotage de la migration, évangélisation et formation continue des équipes cliniques
 
--   -- Designed and maintained containerized R platforms (Docker) for Posit Server ecosystems and pharma applications
--   -- Leading open-source R package development to accelerate insights generation in clinical research settings
--   -- Provided platform support, automation, documentation, and incident handling in regulated environments
+-  -- Développement de packages R (internes et open-source) pour la standardisation des workflows et l'accélération du clinical reporting
 
-<br>
+-  -- Conception et maintien d'infrastructures analytiques conteneurisées (Posit Server) hébergeant des applications Shiny en environnement hautement réglementé
 
-# Experience
+\cvevent{01/2024 - 02/2025}{Consultant R Développeur}{Freelance }
 
-\cvevent{01/2024 - 02/2025}{Data Science Consultant}{Freelancer - Pharmaceutical \\& Tech Sectors}
+-  -- Pilotage en totale autonomie de projets data de bout en bout (du cadrage de l'architecture jusqu'au déploiement final)
 
--   -- Developed data infrastructure solutions for multiple clients, implementing process automation and cloud-based data management systems
--   -- Built and operated cloud-based analytical infrastructures on AWS
--   -- Conducted complex data analysis and predictive modeling across diverse industry domains, including healthcare and financial technology
-<br>
+-  -- Développement et mise en production d'applications R Shiny sur mesure et d'infrastructures cloud (AWS)
 
-\cvevent{04/2022 - 01/2024}{R Developer / Data Scientist}{FlowBank}
+-  -- Modélisation prédictive et automatisation des pipelines de données pour divers secteurs (santé, fintech)
 
--   -- Architected and operated production-grade analytics platforms based on R Shiny, Docker, and AWS
--   -- Maintained containerized machine learning pipelines for fraud detection and risk modeling
--   -- Managed internal data platforms used by data science teams, including job scheduling and user support
--   -- Collaborated closely with security and compliance teams in a regulated banking environment
+\cvevent{03/2023 - 01/2024}{Data Scientist Full Stack}{FlowBank}
 
-<br>
+-  -- Évolution vers un rôle full-stack (Data Science, Data Engineering, DevOps) pour piloter l'architecture des plateformes analytiques de la banque
 
-\cvevent{09/2020 - 01/2022}{Lecturer in Biostatistics}{University of Geneva}
+-  -- Opérationnalisation de bout en bout d'applications R Shiny de production via AWS et des pipelines CI/CD
 
--   -- Delivered statistics courses and practical workshops in R and Python
--   -- Produced and maintained teaching material and documentation for students
+-  -- Maintenance des pipelines de machine learning et mentorat technique quotidien des équipes data internes
 
-<br>
+\cvevent{04/2022 - 03/2023}{Développeur R}{FlowBank}
 
-\cvevent{03/2020 - 01/2022}{Research Scientist}{Novo Nordisk - Campus Biotech, Switzerland}
+-  -- Développement d'outils analytiques internes et automatisation des processus de reporting pour les équipes métiers
 
--   -- Developed large-scale data processing pipelines for clinical and neuroimaging data
--   -- Applied advanced Bayesian statistical modeling and machine learning techniques
--   -- Collaborated with international research teams and maintained rigorous data governance standards
+-  -- Création et gestion de pipelines de traitement de données sécurisés adaptés aux contraintes du secteur bancaire
 
+-  -- Analyse exploratoire de données financières et mise en place des premières briques de l'infrastructure R interne
+
+\cvevent{09/2020 - 01/2022}{Enseignant en Biostatistique}{Université de Genève}
+
+-  -- Enseignement de la statistique et animation d'ateliers pratiques en R et Python
+
+-  -- Création et maintenance de supports de cours et de documentation technique pour les étudiants
+
+\cvevent{03/2020 - 01/2022}{Chercheur}{Novo Nordisk - Campus Biotech, Suisse}
+
+-  -- Développement de pipelines de traitement de données à grande échelle pour des données cliniques et de neuroimagerie
+
+-  -- Application de méthodes avancées de modélisation statistique bayésienne et de machine learning
+
+-  -- Collaboration internationale et maintien de standards rigoureux de gouvernance des données
 
 # Projects
 
