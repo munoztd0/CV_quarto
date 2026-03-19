@@ -1,19 +1,18 @@
----
 title: Untitled
 format:
   modern2-cv-pdf: default
 author: David Munoz-Tord
 cvfont: raleway
 cvcolor:
-  main: B83B5E
-  accent: 6A2C70
+  main: "B83B5E"
+  accent: "6A2C70"
 sidebar:
   image: portrait.jpg
   sections:
-    - name: Développeur R
+    - name: Développeur R Sénior
       items:
         - icon: map-marker
-          text: Genève, Suisse
+          text: Ferney-Voltaire, France
         - icon: envelope
           text: david.munoztord@mailbox.org
         - icon: home
@@ -27,16 +26,16 @@ sidebar:
           href: https://www.linkedin.com/in/david-munoz-tord-409639150/
     - name: Compétences
       items:
-        - text: R (Packages, Archi)
+        - text: R
           exp: { text: "10 ans", num: 1 }
         - text: Docker & CI/CD
           exp: { text: "5 ans", num: 0.8 }
         - text: Python
-          exp: { text: "5 ans", num: 0.8 }
+          exp: { text: "5 ans", num: 0.7 }
         - text: Bash
           exp: { text: "7 ans", num: 0.9 }
         - text: JavaScript
-          exp: { text: "2 ans", num: 0.4 }
+          exp: { text: "5 ans", num: 0.5 }
     - name: Librairies & Frameworks
       items:
         - Shiny (golem, rhino, leprechaun)
@@ -58,8 +57,8 @@ sidebar:
           exp: { text: "Courant", num: 1 }
         - text: Espagnol
           exp: { text: "Maternel", num: 1 }
-        - text: Japonais
-          exp: { text: "Passif", num: 0.4 }
+        - text: Italien
+          exp: { text: "Professionnel", num: 0.8 }
         - text: Allemand
           exp: { text: "Passif", num: 0.4 }
 execute:
@@ -70,133 +69,110 @@ editor:
 ---
 
 ```{r}
+#| label: cvevents
 cvevents <- function(tbl, when, what, where, descr) {
   command_start <- "\\cvevent"
   tbl[[where]] <- gsub("\n", " \\\\newline ", tbl[[where]])
   res <- paste0(
-    command_start, "{", tbl[[when]], "}",
+    command_start, "{", tbl[[when]], "}", 
     "{", tbl[[what]], "}",
     "{", tbl[[where]], "}"
   )
   cat(res, sep = "\n\n\n")
 }
+```
 
-# Summary
+# Profil
 
-Développeur R passionné par l'architecture logicielle, la mise en production et la transmission de savoir. Spécialiste du déploiement d'applications Shiny et du DevOps, j'ai l'habitude de piloter des projets analytiques de bout en bout. La pédagogie a toujours été un fil rouge dans mon parcours, avec une forte dimension de formation et d'accompagnement intégrée à chacun de mes postes. Très actif dans la communauté open source via la création de packages.
-
-<!-- je cherche aujourd'hui à m'investir dans des projets techniques ambitieux où je pourrai allier développement rigoureux et partage de compétences. -->
+Développeur R passionné par l'architecture logicielle, la mise en production et la transmission de savoir. Spécialiste du déploiement d'applications Shiny et des environnements conteneurisés (Docker, CI/CD), j'ai l'habitude de piloter des projets analytiques de bout en bout. La pédagogie a toujours été un fil rouge dans mon parcours, avec une forte dimension de formation et d'accompagnement intégrée à chacun de mes postes. Très actif dans la communauté open source via la création de packages et auteur de plusieurs publications scientifiques, je cherche aujourd'hui à m'investir dans des projets techniques ambitieux où je pourrai allier développement rigoureux et partage de compétences.
 
 # Expérience
-\cvevent{02/2025 - Présent}{Développeur R Sénior}{Johnson & Johnson}
 
--  -- Leader technique de la transition stratégique de SAS vers R : pilotage de la migration, évangélisation et formation continue des équipes cliniques
+\cvevent{02/2025 - Présent}{Développeur R Sénior}{Johnson \& Johnson}
 
--  -- Développement de packages R (internes et open-source) pour la standardisation des workflows et l'accélération du clinical reporting
+-   -- Leader de l'équipe R et de la transition stratégique depuis SAS : pilotage, évangélisation et formation continue des équipes cliniques
 
--  -- Conception et maintien d'infrastructures analytiques conteneurisées (Posit Server) hébergeant des applications Shiny en environnement hautement réglementé
+-   -- Développement intensif de packages R (internes et open-source) fortement documentés (roxygen2) et testés (testthat) pour le clinical reporting
 
-\cvevent{01/2024 - 02/2025}{Consultant R Développeur}{Freelance }
+-   -- Conception et maintien d'infrastructures analytiques conteneurisées (Posit Server) hébergeant des applications Shiny en environnement réglementé
 
--  -- Pilotage en totale autonomie de projets data de bout en bout (du cadrage de l'architecture jusqu'au déploiement final)
+<br>
 
--  -- Développement et mise en production d'applications R Shiny sur mesure et d'infrastructures cloud (AWS)
+\cvevent{01/2024 - 02/2025}{Consultant Data Science}{Freelance - Pharmaceutique \& Tech}
 
--  -- Modélisation prédictive et automatisation des pipelines de données pour divers secteurs (santé, fintech)
+-   -- Pilotage en totale autonomie (lead) de projets data de bout en bout, du cadrage de l'architecture jusqu'au déploiement final
+
+-   -- Développement d'applications R Shiny sur mesure, incluant la mise en place stricte de tests unitaires et d'infrastructures cloud (AWS)
+
+-   -- Modélisation prédictive et automatisation des pipelines de données pour divers secteurs (santé, fintech)
+
+<br>
 
 \cvevent{03/2023 - 01/2024}{Data Scientist Full Stack}{FlowBank}
 
--  -- Évolution vers un rôle full-stack (Data Science, Data Engineering, DevOps) pour piloter l'architecture des plateformes analytiques de la banque
+-   -- Lead de l'équipe data sur l'évolution de l'architecture et la création des plateformes analytiques de la banque (Data Science, Data Engineering, DevOps)
 
--  -- Opérationnalisation de bout en bout d'applications R Shiny de production via AWS et des pipelines CI/CD
+-   -- Opérationnalisation d'applications R Shiny de production (sous forme de packages) avec intégration continue (CI/CD) et tests automatisés
 
--  -- Maintenance des pipelines de machine learning et mentorat technique quotidien des équipes data internes
+-   -- Maintenance des pipelines de machine learning et mentorat technique quotidien des équipes internes
+
+<br>
 
 \cvevent{04/2022 - 03/2023}{Développeur R}{FlowBank}
 
--  -- Développement d'outils analytiques internes et automatisation des processus de reporting pour les équipes métiers
+-   -- Développement d'outils analytiques internes et automatisation des processus de reporting pour les équipes métiers
 
--  -- Création et gestion de pipelines de traitement de données sécurisés adaptés aux contraintes du secteur bancaire
+-   -- Création de packages R internes sécurisés, documentés et testés pour répondre aux contraintes du secteur bancaire
 
--  -- Analyse exploratoire de données financières et mise en place des premières briques de l'infrastructure R interne
+-   -- Analyse exploratoire de données financières et mise en place des premières briques de l'infrastructure R interne
+
+<br>
 
 \cvevent{09/2020 - 01/2022}{Enseignant en Biostatistique}{Université de Genève}
 
--  -- Enseignement de la statistique et animation d'ateliers pratiques en R et Python
+-   -- Enseignement de la statistique et animation d'ateliers pratiques en R et Python
 
--  -- Création et maintenance de supports de cours et de documentation technique pour les étudiants
+-   -- Création et maintenance de supports de cours et de documentation technique pour les étudiants
 
-\cvevent{03/2020 - 01/2022}{Chercheur}{Novo Nordisk - Campus Biotech, Suisse}
+<br>
 
--  -- Développement de pipelines de traitement de données à grande échelle pour des données cliniques et de neuroimagerie
+\cvevent{03/2020 - 01/2022}{Chercheur en Neurosciences}{Campus Biotech, Suisse}
 
--  -- Application de méthodes avancées de modélisation statistique bayésienne et de machine learning
+-   -- Développement de pipelines de traitement de données à grande échelle pour des données cliniques et de neuroimagerie
 
--  -- Collaboration internationale et maintien de standards rigoureux de gouvernance des données
+-   -- Application de méthodes avancées de modélisation statistique bayésienne et de machine learning
 
-# Projects
+-   -- Collaboration internationale et maintien de standards rigoureux de gouvernance des données
 
-See my \href{https://github.com/munoztd0}{\underline{github profile}} for a more comprehensive list of open source projects.
+
+# Projets Open Source & Communauté
+
+Voir mon \href{https://github.com/munoztd0}{\underline{profil GitHub}} pour une liste plus exhaustive.
+
+\cvevent{Création de Packages \& Outils}{Auteur \& Lead Developer}{Architecture R, Typage, Shiny}
+
+-   -- **Junco** (Johnson \& Johnson) : Création d'un package de reporting d'essais cliniques (génération de TLGs, analyses statistiques avancées, exports RTF/DOCX de production).
+
+-   -- **Typr** (We Data) : Co-créateur d'un système de typage moderne pour R conçu pour améliorer la sécurité du code et la maintenance des packages à long terme.
+
+-   -- **Outils transverses** : Créateur de *DbVieweR* (gestion de bases de données sous Shiny) et *MathAnimatoR* (moteur d'animation mathématique intégrant R et Python).
+
+<br>
+
+\cvevent{Écosystème R \& CI/CD}{Mainteneur \& Contributeur Actif}{rOpenSci, Data Viz, Modélisation}
+
+-   -- **circle (rOpenSci)** : Mainteneur officiel du package d'intégration CircleCI pour R, démontrant une expertise pointue en intégration continue.
+
+-   -- **Contributions majeures** : Contributeur au code source de packages de référence de l'écosystème, notamment *ggplot2*, *brms*, *echarts4r* (R/JS) et *fiRebase*.
+
+<br>
+
+\cvevent{We Data}{Co-Président}{Formation, Évangélisation, Data Science}
+
+-   -- Direction d'une association dédiée au partage de connaissances en data science.
+
+-   -- Organisation régulière de formations, de hackathons et animation de la communauté R via les "R-Lunches" à l'Université de Genève.
 
 # Publications
 
-See my \href{https://github.com/munoztd0/publications/tree/master}{\underline{publications pages}} for a comprehensive list my scientific publications.
-
-<!-- **Investigating the effect of liraglutide on self-reported liking and -->
-<!-- neural responses to food stimuli.** Coppin, G., Munoz Tord, D., Pool, -->
-<!-- Cereghetti, D., Golay, A., Sander, D., & Pataky, Z. *Journal of Obesity* -->
-<!-- (2023) - -->
-<!-- \href{https://www.nature.com/articles/s41366-023-01370-w}{\underline{Paper}} -->
-
-<!-- <br> -->
-
-<!-- **Differential contributions of ventral striatum subregions to the -->
-<!-- motivational and hedonic components of the affective processing of -->
-<!-- reward.** Pool, E. R., Munoz Tord, D. , Delplanque, S., Stussi, Y., -->
-<!-- Cereghetti, D., Vuilleumier, P., & Sander, D. *Journal of Neuroscience* -->
-<!-- (2022) - \href{https://doi.org/10.1523/JNEUROSCI.1124-21.2022}{\underline{Paper}} -->
-
-<!-- <br> -->
-
-<!-- **3D-printed pacifier-shaped mouthpiece for fMRI-compatible -->
-<!-- gustometers.** Munoz Tord, D., Coppin, G., Pool, E. R., Mermoud, C., -->
-<!-- Pataky, Z., Sander, D., & Delplanque, S. *Eneuro* (2021) - \href{https://dx.doi.org/10.1523\%2FENEURO.0208-21.2021}{\underline{Paper}} -->
-
-<!-- <br> -->
-
-<!-- **Early spatial attention deployment towards aggressive voices.** Burra, -->
-<!-- N., Kerzel, D., Munoz Tord, D., Grandjean, D., & Ceravolo, L. *Social -->
-<!-- Cognitive and Affective Neuroscience* (2019) - \href{https://doi.org/10.1093/scan/nsy100}{\underline{Paper}} -->
-
-<!-- <br>
-
-# Professional References
-
--->
-
-
-
-<!-- -   \href{https://genev.unige.ch/research/people/Jose-Manuel-De-Abreu-Nunes}{\underline{Jose Nunes}} -->
-<!--     [{{< fa envelope >}}](Jose.deAbreuNunes@unige.ch), **Professor of -->
-<!--     Biostatistics at the University of Geneva** -->
-
-
-<!-- - \href{https://john-coene.com}{\underline{John Coene}} [{{< fa envelope >}}](john@opifex.org), **Founder and Lead developer at Opifex**  -->
-
-<!-- - **[Jorge Figueiredo](https://genev.unige.ch/research/people/Jose-Manuel-De-Abreu-Nunes), Head of Information Security at FlowBank** -->
-
-<!-- {{< fa envelope >}} Jorge.figueredo@flowbank.com -->
-
-
-<!-- -   \href{https://www.unige.ch/cisa/center/members/meuleman-ben}{\underline{Ben Meuleman}} -->
-<!--     [{{< fa envelope >}}](Ben.Meuleman@unige.ch), **Statistician at -->
-<!--     University of Geneva** -->
-
-
-<!-- - **[Meirav Banon Skornik](https://genev.unige.ch/research/people/Jose-Manuel-De-Abreu-Nunes), Senior Analyst at the CICAD organization** -->
-
-<!-- {{< fa envelope >}} Meirav@cicad.ch -->
-
-
-
-
+Voir ma \href{https://github.com/munoztd0/publications/tree/master}{\underline{page de publications}} pour une liste complète de mes travaux scientifiques.
