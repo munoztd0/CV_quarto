@@ -258,10 +258,12 @@ Cognitive and Affective Neuroscience* (2019) - \href{https://doi.org/10.1093/sca
 
 # Professional References
 
--   \href{https://john-coene.com}{\underline{Joseph Kovach}} [{{< fa envelope >}}](JKovach2@ITS.JNJ.com), **Head of Technological Solutions at Johnson \& Johnson**
+-   \href{https://www.linkedin.com/in/gabrielmbecker/}{\underline{Gabriel Becker }}[{{< fa envelope >}}](gabembecker@gmail.com), **Statistical Computing Consultant and  R-core contributor**
+
+-   \href{https://www.linkedin.com/in/joe-kovach-758bb694/}{\underline{Joseph Kovach}} [{{< fa envelope >}}](JKovach2@ITS.JNJ.com), **Head of Technological Solutions at Johnson \& Johnson**
 
 -  \href{https://john-coene.com}{\underline{John Coene}} [{{< fa envelope >}}](john@opifex.org), **Lead Developer at Opifex**
 
 -   \href{https://www.linkedin.com/in/psaouter}{\underline{Pierre Saouter }}[{{< fa envelope >}}](pierre@the-y-company.com), **Head Data Scientist at FlowBank**
 
--   \href{https://www.researchgate.net/profile/Eva-Pool}{\underline{Eva R. Pool }}[{{< fa envelope >}}](Eva.Pool@unige.ch), **Professor of Psychology at UniGe**
+<!-- -   \href{https://www.researchgate.net/profile/Eva-Pool}{\underline{Eva R. Pool }}[{{< fa envelope >}}](Eva.Pool@unige.ch), **Professor of Psychology at UniGe** -->
