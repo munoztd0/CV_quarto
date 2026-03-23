@@ -1,0 +1,269 @@
+---
+title: Untitled
+format:
+  modern2-cv-pdf: default
+author: David Munoz-Tord
+cvfont: raleway #texlive fonts like raleway,fetamont,gillius,comfortaa
+cvcolor:
+  main: B83B5E
+  accent: 6A2C70
+sidebar:
+  image: portrait.jpg
+  sections:
+    - name: David Munoz Tord
+      items:
+        - icon: map-marker
+          text: Geneva, Swizterland
+        - icon: envelope
+          text: david.munoztord@mailbox.org
+        - icon: home
+          text: david-munoztord.online
+          href: https://munoztd0.github.io/homepage/
+        - icon: github
+          text: munoztd0
+          href: https://github.com/munoztd0
+        - icon: linkedin
+          text: david-munoz-tord
+          href: https://www.linkedin.com/in/david-munoz-tord-409639150/
+    - name: Skills
+      items:
+        - text: R
+          exp: { text: "10 yrs", num: 1 }
+        - text: SQL
+          exp: { text: "5 yrs", num: 0.8 }
+        - text: Python
+          exp: { text: "5 yrs", num: 0.7 }
+        - text: Bash
+          exp: { text: "7 yrs", num: 0.9 }
+        - text: JavaScript
+          exp: { text: "5 yrs", num: 0.5 }
+    - name: Libraries
+      items:
+        - Shiny (golem, rhino, leprechaun)
+        - devtools, testthat, roxygen2, renv
+        - tidyverse, data.table, ggplot2
+        - brms, lmer, Rstan, JAGS, H2O, XGBoost, tidymodels, caret, mlr
+        - Scikit-learn, PyTorch, languagemodels
+    - name: Technologies
+      items:
+        - Git - BASH
+        - Jira
+        - CI/CD - Docker
+        - Posit Server - AWS
+        - Postgres
+    - name: Domains
+      items:
+        - Data Structures
+        - Data Mining
+        - Machine Learning
+        - Linux System Administration
+        - Data Visualization
+        - Spatial Analysis
+        - Bayesian Statistics
+    - name: Languages
+      items:
+        - text: French
+          exp: { text: "Native", num: 1 }
+        - text: English
+          exp: { text: "Fluent", num: 1 }
+        - text: Spanish
+          exp: { text: "Native", num: 1 }
+        - text: Italian
+          exp: { text: "Basic", num: 0.6 }
+        - text: German
+          exp: { text: "Basic", num: 0.4 }
+    - name: Education
+      items:
+        - text: "Ph.D. Candidate in Computational Neuroscience"
+          inst: "EPFL - Switzerland"
+          time: "03/2020 - 01/2022"
+          details: "Topic: Food-related sensory alteration effects of GLP-1 receptor agonist liraglutide"
+        - text: "MSc in Computational Neuroscience"
+          inst: "University of Geneva - Switzerland"
+          time: "09/2018 - 03/2020"
+          details: "Thesis: Denoising of high-resolution fMRI signals using tICA"
+        - text: "Complementary Studies in Computer Science"
+          inst: "UMass Amherst - USA"
+          time: "09/2017 - 06/2018"
+          details: "Capstone: Machine Learning for neuroimaging data"
+        - text: "BSc in Cognitive Science"
+          inst: "University of Geneva - Switzerland"
+          time: "09/2014 - 06/2017"
+          details: "Thesis: Early detection of ASD event-related potentials"
+    - name: Extracurricular
+      items:
+        - icon: github
+          text: "Top 12.5% on \\href{https://github-readme-stats-sigma-five.vercel.app/api?username=munoztd0&rank_icon=percentile&theme=radical}{\\underline{GitHub }} (2026)"
+        - icon: share-alt
+          text: "Top 2% on \\href{https://stackoverflow.com/users/13158839/david-muñoz-tord}{\\underline{StackOverflow}} (2024)"
+        - icon: award
+          text: "Global Fellow scholarship (2017)"
+        - icon: bicycle
+          text: "Co-founder of \\href{https://www.rocket-courrier.ch/}{\\underline{Rocket-Courrier}}, an eco-responsible bike messenger cooperative."
+    - name: Resume Source
+      items:
+        - icon: github
+          text: "\\href{https://github.com/munoztd0/CV_quarto/blob/main/thinkr/CV.qmd}{\\underline{Quarto code}}"
+
+execute:
+  echo: false
+editor:
+  markdown:
+    wrap: 72
+---
+
+```{r}
+#| label: cvevents
+cvevents <- function(tbl, when, what, where, descr) {
+  command_start <- "\\cvevent"
+  tbl[[where]] <- gsub("\n", " \\\\newline ", tbl[[where]])
+  res <- paste0(
+    command_start, "{", tbl[[when]], "}", 
+    "{", tbl[[what]], "}",
+    "{", tbl[[where]], "}"
+  )
+  cat(res, sep = "\n\n\n")
+}
+```
+
+# Profile
+
+Senior R Developer with expertise in software architecture and production deployment. Specialist in the Shiny ecosystem, Docker, and CI/CD. Proven track record of leading end-to-end analytical projects. Strongly involved in open source and technical mentoring. Seeking ambitious challenges that combine rigorous coding and knowledge sharing.
+
+# Experience
+
+\cvevent{02/2025 - Present}{Senior R Developer}{Johnson \& Johnson}
+
+-   -- R Team Lead managing the strategic transition from SAS: steering, evangelization, and continuous training of clinical teams
+
+-   -- Intensive development of heavily documented (roxygen2) and tested (testthat) internal and open-source R packages for clinical reporting
+
+-   -- Design and maintenance of containerized analytical infrastructures (Posit Server) hosting Shiny applications in a regulated environment
+
+<br>
+
+\cvevent{01/2024 - 02/2025}{Data Science Consultant}{Freelance - Pharmaceutical \& Tech}
+
+-   -- Led end-to-end data projects with full autonomy, from architecture scoping to final deployment
+
+-   -- Developed custom R Shiny applications, including strict implementation of unit tests and cloud infrastructures (AWS)
+
+-   -- Predictive modeling and automation of data pipelines for various sectors (healthcare, fintech)
+
+<br>
+
+\cvevent{03/2023 - 01/2024}{Full Stack Data Scientist}{FlowBank}
+
+-   -- Led the data team in evolving the architecture and creating the bank's analytical platforms (Data Science, Data Engineering, DevOps)
+
+-   -- Operationalized production-ready R Shiny applications (as packages) with continuous integration (CI/CD) and automated testing
+
+-   -- Maintained machine learning pipelines and provided daily technical mentoring to internal teams
+
+<br>
+
+\cvevent{04/2022 - 03/2023}{R Developer}{FlowBank}
+
+-   -- Developed internal analytical tools and automated reporting processes for business teams
+
+-   -- Created secure, documented, and tested internal R packages to meet banking sector constraints
+
+-   -- Conducted exploratory analysis of financial data and laid the groundwork for the internal R infrastructure
+
+<br>
+
+\cvevent{09/2020 - 01/2022}{Lecturer in Biostatistics}{University of Geneva}
+
+-   -- Taught statistics and led practical workshops in R and Python
+
+-   -- Created and maintained course materials and technical documentation for students
+
+<br>
+
+\cvevent{03/2020 - 01/2022}{Neuroscience Researcher}{Campus Biotech}
+
+-   -- Developed large-scale data processing pipelines for clinical and neuroimaging datasets
+
+-   -- Applied advanced Bayesian statistical modeling and machine learning methods
+
+-   -- Collaborated internationally and maintained rigorous data governance standards
+
+<br>
+
+# Open Source Projects and Community
+
+<br>
+
+See my \href{https://github.com/munoztd0}{\underline{GitHub profile}} for a more comprehensive list.
+
+<br>
+
+\cvevent{Packages}{Author \& Lead Developer}{R, Python, Shiny}
+
+-   -- **junco** (Johnson \& Johnson): Created a clinical trial reporting package (TLG generation, advanced statistical analyses, production-ready RTF/DOCX exports).
+
+-   -- **circle (rOpenSci)**: Official maintainer of the CircleCI integration package for R.
+
+-   -- **echarts4r and fiRebase (Opifex)**: Maintainer. Developed advanced interactive visualizations (R/JS) and implemented secure backend infrastructures (authentication, databases).
+
+-   -- **Cross-functional tools**: Creator of **DbVieweR** (database management in Shiny) and **MathAnimatoR** (mathematical animation engine integrating R and Python).
+
+-   -- **Major contributions**: Contributed source code to reference ecosystem packages, notably **ggplot2**, **brms**, **AFNI**.
+
+<br>
+
+\cvevent{We Data}{Co-President}{Training, Evangelization, Data Science}
+
+-   -- **Typr**: Co-creator of a modern typing system for R designed to improve code safety and long-term package maintenance.
+
+-   -- **Open Source Training**: Designed and regularly hosted technical workshops for the community, making all my \href{https://github.com/munoztd0/teaching/blob/main/README.md}{\underline{workshops freely available}}.
+
+-   -- Regularly organized training sessions, hackathons, and hosted the R community via "**R-Lunches**" at the University of Geneva.
+
+<br>
+
+# Publications
+
+See my \href{https://github.com/munoztd0/publications/tree/master}{\underline{publications page}} for a complete list of my scientific work.
+
+<br>
+
+**Investigating the effect of liraglutide on self-reported liking and
+neural responses to food stimuli.** Coppin, G., Munoz Tord, D., Pool,
+Cereghetti, D., Golay, A., Sander, D., & Pataky, Z. *Journal of Obesity*
+(2023) -
+\href{https://www.nature.com/articles/s41366-023-01370-w}{\underline{Paper}}
+
+<br>
+
+**Differential contributions of ventral striatum subregions to the
+motivational and hedonic components of the affective processing of
+reward.** Pool, E. R., Munoz Tord, D. , Delplanque, S., Stussi, Y.,
+Cereghetti, D., Vuilleumier, P., & Sander, D. *Journal of Neuroscience*
+(2022) - \href{https://doi.org/10.1523/JNEUROSCI.1124-21.2022}{\underline{Paper}}
+
+<br>
+
+**3D-printed pacifier-shaped mouthpiece for fMRI-compatible
+gustometers.** Munoz Tord, D., Coppin, G., Pool, E. R., Mermoud, C.,
+Pataky, Z., Sander, D., & Delplanque, S. *Eneuro* (2021) - \href{https://dx.doi.org/10.1523\%2FENEURO.0208-21.2021}{\underline{Paper}}
+
+<br>
+
+**Early spatial attention deployment towards aggressive voices.** Burra,
+N., Kerzel, D., Munoz Tord, D., Grandjean, D., & Ceravolo, L. *Social
+Cognitive and Affective Neuroscience* (2019) - \href{https://doi.org/10.1093/scan/nsy100}{\underline{Paper}}
+
+<br>
+
+# Professional References
+
+-   \href{https://www.linkedin.com/in/gabrielmbecker/}{\underline{Gabriel Becker }}[{{< fa envelope >}}](gabembecker@gmail.com), **Statistical Computing Consultant and  R-core contributor**
+
+-   \href{https://www.linkedin.com/in/joe-kovach-758bb694/}{\underline{Joseph Kovach}} [{{< fa envelope >}}](JKovach2@ITS.JNJ.com), **Head of Technological Solutions at Johnson \& Johnson**
+
+-  \href{https://john-coene.com}{\underline{John Coene}} [{{< fa envelope >}}](john@opifex.org), **Lead Developer at Opifex**
+
+-   \href{https://www.linkedin.com/in/psaouter}{\underline{Pierre Saouter }}[{{< fa envelope >}}](pierre@the-y-company.com), **Head Data Scientist at FlowBank**
+
+<!-- -   \href{https://www.researchgate.net/profile/Eva-Pool}{\underline{Eva R. Pool }}[{{< fa envelope >}}](Eva.Pool@unige.ch), **Professor of Psychology at UniGe** -->
