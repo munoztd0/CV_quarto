@@ -12,8 +12,8 @@ sidebar:
   sections:
     - name: David Munoz Tord
       items:
-        - icon: map-marker
-          text: Geneva, Swizterland
+        #- icon: map-marker
+          #text: Geneva, Switzerland
         - icon: envelope
           text: david.munoztord@mailbox.org
         - icon: home
@@ -42,7 +42,7 @@ sidebar:
         - Shiny (golem, rhino, leprechaun)
         - devtools, testthat, roxygen2, renv
         - tidyverse, data.table, ggplot2
-        - brms, lmer, Rstan, JAGS, H2O, XGBoost, tidymodels, caret, mlr
+        - brms, lmer, Stan, JAGS, H2O, XGBoost, tidymodels, caret, mlr
         - Scikit-learn, PyTorch, languagemodels
     - name: Technologies
       items:
@@ -146,7 +146,7 @@ Senior R Developer with expertise in software architecture and production deploy
 
 -   -- Led end-to-end data projects with full autonomy, from architecture scoping to final deployment
 
--   -- Developed custom R Shiny applications, including strict implementation of unit tests and cloud infrastructures (AWS)
+-   -- Developed custom R Shiny applications, including strict implementation of unit tests and cloud infrastructures (AWS): \href{https://ecocalc.eu/}{\underline{example}} 
 
 -   -- Predictive modeling and automation of data pipelines for various sectors (healthcare, fintech)
 
@@ -212,13 +212,23 @@ See my \href{https://github.com/munoztd0}{\underline{GitHub profile}} for a more
 
 <br>
 
-\cvevent{We Data}{Co-President}{Training, Evangelization, Data Science}
+\cvevent{We Data}{Co-President}{Training, Content, Data Science}
 
 -   -- **Typr**: Co-creator of a modern typing system for R designed to improve code safety and long-term package maintenance.
 
 -   -- **Open Source Training**: Designed and regularly hosted technical workshops for the community, making all my \href{https://github.com/munoztd0/teaching/blob/main/README.md}{\underline{workshops freely available}}.
 
 -   -- Regularly organized training sessions, hackathons, and hosted the R community via "**R-Lunches**" at the University of Geneva.
+
+<br>
+
+
+
+\cvevent{Communities}{Maintainer \& Technical Advisor}{R, AI, Open Science} 
+
+-   --  \href{https://youngaileaders.ch/}{\underline{Young AI leader}}: Technical Advisor for the Geneva Hub
+
+-   --  \href{https://ropensci.org/}{\underline{rOpenSci}} - open tools for open science: Maitainer and member
 
 <br>
 
@@ -250,11 +260,7 @@ Pataky, Z., Sander, D., & Delplanque, S. *Eneuro* (2021) - \href{https://dx.doi.
 
 <br>
 
-**Early spatial attention deployment towards aggressive voices.** Burra,
-N., Kerzel, D., Munoz Tord, D., Grandjean, D., & Ceravolo, L. *Social
-Cognitive and Affective Neuroscience* (2019) - \href{https://doi.org/10.1093/scan/nsy100}{\underline{Paper}}
 
-<br>
 
 # Professional References
 

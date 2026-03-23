@@ -13,7 +13,7 @@ sidebar:
     - name: David Munoz Tord
       items:
         - icon: map-marker
-          text: Geneva, Swizterland
+          text: Geneva, Switzerland
         - icon: envelope
           text: david.munoztord@mailbox.org
         - icon: home
@@ -39,26 +39,25 @@ sidebar:
           exp: { text: "5 yrs", num: 0.5 }
     - name: Libraries
       items:
-        - Shiny (golem, rhino, leprechaun)
+        - Shiny, Quarto, R Markdown
         - devtools, testthat, roxygen2, renv
-        - tidyverse, data.table, ggplot2
-        - brms, lmer, Rstan, JAGS, H2O, XGBoost, tidymodels, caret, mlr
-        - Scikit-learn, PyTorch, languagemodels
+        - tidyverse, data.table, ggplot2, plotly, Highcharts
+        - brms, lmer, Rstan, JAGS, H2O, XGBoost, tidymodels
+        - Scikit-learn, PyTorch
     - name: Technologies
       items:
         - Git - BASH
-        - Jira
+        - Jira - Agile
         - CI/CD - Docker
         - Posit Server - AWS
-        - Postgres
+        - REST APIs - Postgres
     - name: Domains
       items:
-        - Data Structures
+        - Clinical Trial Reporting
+        - CDISC (SDTM/ADaM)
         - Data Mining
         - Machine Learning
-        - Linux System Administration
         - Data Visualization
-        - Spatial Analysis
         - Bayesian Statistics
     - name: Languages
       items:
@@ -128,27 +127,29 @@ cvevents <- function(tbl, when, what, where, descr) {
 
 # Profile
 
-Senior R Developer with expertise in software architecture and production deployment. Specialist in the Shiny ecosystem, Docker, and CI/CD. Proven track record of leading end-to-end analytical projects. Strongly involved in open source and technical mentoring. Seeking ambitious challenges that combine rigorous coding and knowledge sharing.
+Senior R Developer with expertise in clinical trial reporting, software architecture, and production deployment. Specialist in the Shiny ecosystem, R package development, and CI/CD. Track record of generating CDISC-compliant TFLs and automating regulatory workflows using Quarto. Strongly involved in open source and technical mentoring.
 
 # Experience
 
-\cvevent{02/2025 - Present}{Senior R Developer}{Johnson \& Johnson}
+\cvevent{02/2025 - Present}{Senior R Developer}{Cytel}
 
--   -- R Team Lead managing the strategic transition from SAS: steering, evangelization, and continuous training of clinical teams
+-   -- R Team at Johnson \& Johnson managing the strategic transition from SAS: steering, evangelization, and continuous training of clinical teams
 
--   -- Intensive development of heavily documented (roxygen2) and tested (testthat) internal and open-source R packages for clinical reporting
+-   -- Intensive development of documented (roxygen2) and tested (testthat) R packages for clinical trial programming, specifically aligned with CDISC standards
 
--   -- Design and maintenance of containerized analytical infrastructures (Posit Server) hosting Shiny applications in a regulated environment
+-   -- Implementation of automated reporting systems leveraging Quarto to efficiently generate TFLs (Tables, Figures, Listings) for regulatory submissions
+
+-   -- Design, performance testing, and maintenance of analytical infrastructures (Posit Server) hosting Shiny applications in a strictly regulated environment
 
 <br>
 
 \cvevent{01/2024 - 02/2025}{Data Science Consultant}{Freelance - Pharmaceutical \& Tech}
 
--   -- Led end-to-end data projects with full autonomy, from architecture scoping to final deployment
+-   -- Led end-to-end data projects with full autonomy, mapping user requirements to scalable architecture and final deployment
 
--   -- Developed custom R Shiny applications, including strict implementation of unit tests and cloud infrastructures (AWS)
+-   -- Developed high-performance custom R Shiny containerized dashboards, integrating REST APIs and implementing rigorous unit testing
 
--   -- Predictive modeling and automation of data pipelines for various sectors (healthcare, fintech)
+-   -- Predictive modeling and automation of data pipelines utilizing tidyverse and advanced data visualization libraries (ggplot2, echarts4r, plotly)
 
 <br>
 
@@ -158,7 +159,7 @@ Senior R Developer with expertise in software architecture and production deploy
 
 -   -- Operationalized production-ready R Shiny applications (as packages) with continuous integration (CI/CD) and automated testing
 
--   -- Maintained machine learning pipelines and provided daily technical mentoring to internal teams
+-   -- Maintained machine learning pipelines and provided daily technical mentoring to internal cross-functional teams
 
 <br>
 
@@ -180,7 +181,7 @@ Senior R Developer with expertise in software architecture and production deploy
 
 <br>
 
-\cvevent{03/2020 - 01/2022}{Neuroscience Researcher}{Campus Biotech}
+\cvevent{03/2020 - 01/2022}{PhD Candidate}{Campus Biotech - Novartis}
 
 -   -- Developed large-scale data processing pipelines for clinical and neuroimaging datasets
 
@@ -200,7 +201,7 @@ See my \href{https://github.com/munoztd0}{\underline{GitHub profile}} for a more
 
 \cvevent{Packages}{Author \& Lead Developer}{R, Python, Shiny}
 
--   -- **junco** (Johnson \& Johnson): Created a clinical trial reporting package (TLG generation, advanced statistical analyses, production-ready RTF/DOCX exports).
+-   -- **junco** (Johnson \& Johnson): Created a clinical trial reporting package (TFL generation, advanced statistical analyses, production-ready RTF/DOCX exports).
 
 -   -- **circle (rOpenSci)**: Official maintainer of the CircleCI integration package for R.
 
@@ -265,5 +266,3 @@ Cognitive and Affective Neuroscience* (2019) - \href{https://doi.org/10.1093/sca
 -  \href{https://john-coene.com}{\underline{John Coene}} [{{< fa envelope >}}](john@opifex.org), **Lead Developer at Opifex**
 
 -   \href{https://www.linkedin.com/in/psaouter}{\underline{Pierre Saouter }}[{{< fa envelope >}}](pierre@the-y-company.com), **Head Data Scientist at FlowBank**
-
-<!-- -   \href{https://www.researchgate.net/profile/Eva-Pool}{\underline{Eva R. Pool }}[{{< fa envelope >}}](Eva.Pool@unige.ch), **Professor of Psychology at UniGe** -->
