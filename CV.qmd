@@ -13,7 +13,7 @@ sidebar:
     - name: David Munoz Tord
       items:
         - icon: map-marker
-          text: Geneva, Swizterland
+          text: Geneva, Switzerland
         - icon: envelope
           text: david.munoztord@mailbox.org
         - icon: home
