@@ -12,8 +12,8 @@ sidebar:
   sections:
     - name: David Munoz Tord
       items:
-        - icon: map-marker
-          text: Geneva, Switzerland
+        # - icon: map-marker
+        #   text: Geneva, Switzerland
         - icon: envelope
           text: david.munoztord@mailbox.org
         - icon: home
@@ -41,7 +41,7 @@ sidebar:
       items:
         - Shiny, Quarto, R Markdown
         - devtools, testthat, roxygen2, renv
-        - tidyverse, data.table, ggplot2, plotly, Highcharts
+        - tidyverse, data.table, ggplot2, plotly, NEST
         - brms, lmer, Rstan, JAGS, H2O, XGBoost, tidymodels
         - Scikit-learn, PyTorch
     - name: Technologies
@@ -69,23 +69,23 @@ sidebar:
           exp: { text: "Native", num: 1 }
         - text: Italian
           exp: { text: "Basic", num: 0.6 }
-        - text: German
+        - text: Japanese
           exp: { text: "Basic", num: 0.4 }
     - name: Education
       items:
         - text: "Ph.D. Candidate in Computational Neuroscience"
-          inst: "EPFL - Switzerland"
+          inst: "Campus Biotech - Novo Nordisk"
           time: "03/2020 - 01/2022"
-          details: "Topic: Food-related sensory alteration effects of GLP-1 receptor agonist liraglutide"
+          details: "Topic: Sensory alteration effects of GLP-1 receptor agonist liraglutide"
         - text: "MSc in Computational Neuroscience"
-          inst: "University of Geneva - Switzerland"
+          inst: "Geneva Neurocenter - Firmenich"
           time: "09/2018 - 03/2020"
-          details: "Thesis: Denoising of high-resolution fMRI signals using tICA"
+          details: "Thesis: High-resolution fMRI signals using tICA"
         - text: "Complementary Studies in Computer Science"
           inst: "UMass Amherst - USA"
           time: "09/2017 - 06/2018"
           details: "Capstone: Machine Learning for neuroimaging data"
-        - text: "BSc in Cognitive Science"
+        - text: "BSc in Life Sciences"
           inst: "University of Geneva - Switzerland"
           time: "09/2014 - 06/2017"
           details: "Thesis: Early detection of ASD event-related potentials"
@@ -102,7 +102,7 @@ sidebar:
     - name: Resume Source
       items:
         - icon: github
-          text: "\\href{https://github.com/munoztd0/CV_quarto/blob/main/thinkr/CV.qmd}{\\underline{Quarto code}}"
+          text: "\\href{https://github.com/munoztd0/CV_quarto/blob/main/Pharma/CV.qmd}{\\underline{Quarto code}}"
 
 execute:
   echo: false
@@ -133,9 +133,9 @@ Senior R Developer with expertise in clinical trial reporting, software architec
 
 \cvevent{02/2025 - Present}{Senior R Developer}{Cytel}
 
--   -- R Team at Johnson \& Johnson managing the strategic transition from SAS: steering, evangelization, and continuous training of clinical teams
+-   -- Leading the R Team at Johnson \& Johnson managing the strategic transition from SAS: steering, evangelization, and continuous training of clinical teams
 
--   -- Intensive development of documented (roxygen2) and tested (testthat) R packages for clinical trial programming, specifically aligned with CDISC standards
+-   -- Intensive development of validated R packages for clinical trial programming, specifically aligned with CDISC standards
 
 -   -- Implementation of automated reporting systems leveraging Quarto to efficiently generate TFLs (Tables, Figures, Listings) for regulatory submissions
 
@@ -147,23 +147,20 @@ Senior R Developer with expertise in clinical trial reporting, software architec
 
 -   -- Led end-to-end data projects with full autonomy, mapping user requirements to scalable architecture and final deployment
 
--   -- Developed high-performance custom R Shiny containerized dashboards, integrating REST APIs and implementing rigorous unit testing
+-   -- Developed high-performance custom R Shiny containerized apps, integrating REST APIs and implementing rigorous unit testing: See \href{https://ecocalc.eu/}{\underline{here}} for the Chemical Intelligence Platform for Sustainable Design
+
 
 -   -- Predictive modeling and automation of data pipelines utilizing tidyverse and advanced data visualization libraries (ggplot2, echarts4r, plotly)
 
 <br>
 
-\cvevent{03/2023 - 01/2024}{Full Stack Data Scientist}{FlowBank}
+\cvevent{03/2023 - 01/2024}{Data Scientist}{FlowBank}
 
 -   -- Led the data team in evolving the architecture and creating the bank's analytical platforms (Data Science, Data Engineering, DevOps)
 
 -   -- Operationalized production-ready R Shiny applications (as packages) with continuous integration (CI/CD) and automated testing
 
 -   -- Maintained machine learning pipelines and provided daily technical mentoring to internal cross-functional teams
-
-<br>
-
-\cvevent{04/2022 - 03/2023}{R Developer}{FlowBank}
 
 -   -- Developed internal analytical tools and automated reporting processes for business teams
 
@@ -177,13 +174,13 @@ Senior R Developer with expertise in clinical trial reporting, software architec
 
 -   -- Taught statistics and led practical workshops in R and Python
 
--   -- Created and maintained course materials and technical documentation for students
+-   -- Created and maintained course materials and technical documentation for graduate students
 
 <br>
 
-\cvevent{03/2020 - 01/2022}{PhD Candidate}{Campus Biotech - Novartis}
+\cvevent{03/2020 - 01/2022}{Research Scientist}{Novo Nordisk}
 
--   -- Developed large-scale data processing pipelines for clinical and neuroimaging datasets
+-   -- Developed large-scale data processing pipelines for clinical trial datasets
 
 -   -- Applied advanced Bayesian statistical modeling and machine learning methods
 
@@ -265,4 +262,4 @@ Cognitive and Affective Neuroscience* (2019) - \href{https://doi.org/10.1093/sca
 
 -  \href{https://john-coene.com}{\underline{John Coene}} [{{< fa envelope >}}](john@opifex.org), **Lead Developer at Opifex**
 
--   \href{https://www.linkedin.com/in/psaouter}{\underline{Pierre Saouter }}[{{< fa envelope >}}](pierre@the-y-company.com), **Head Data Scientist at FlowBank**
+-   \href{https://www.linkedin.com/in/psaouter}{\underline{Pierre Saouter }}[{{< fa envelope >}}](psaouter@protonmail.com), **Head Data Scientist at FlowBank**
