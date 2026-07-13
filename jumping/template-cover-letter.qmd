@@ -1,0 +1,22 @@
+
+---
+
+Dear Jumping Rivers Hiring Team,
+
+I am writing to apply for the Engineer position. I am genuinely excited by the role because it combines the parts of my work I enjoy most: building reliable data science infrastructure, supporting real users, and improving systems over time through automation and clear documentation.
+
+Over the last few years, I have worked at the intersection of data science and infrastructure in regulated and client-facing environments. At FlowBank, I built a custom data science and machine learning environment on AWS from scratch for analytics teams, including containerized notebooks, reproducible development workflows, and CRON-scheduled jobs for retraining and reporting. At Johnson & Johnson, I have been involved in migration from SAS-based workflows to a modern R platform, with hands-on responsibility for containerized Posit/Shiny infrastructure, CI/CD operations, and production reliability.
+
+I also helped implement internal MCP and code-context integrations so LLM-based agents could better understand our stack and assist clinical programmers in their daily output work. This reinforced an important lesson for me: platform engineering is only successful when it makes users more effective, not just when the infrastructure is technically correct.
+
+What I can bring to Jumping Rivers is practical ownership across deployment and support: Linux operations, cloud infrastructure (especially AWS), containerization, troubleshooting, and communication with stakeholders who have different levels of technical depth. I am comfortable being accountable for delivery, and I am equally comfortable asking questions early when context is needed.
+
+I am also aware there is always more to learn. While AWS is where I have the deepest experience, I am very happy working across teams and environments, and I would be motivated to continue expanding across Azure, GCP, and on-prem deployments as needed.
+
+Jumping Rivers is especially attractive to me because of your consultancy mindset, technical depth, and flexible culture. The opportunity to help clients deploy and maintain robust data science platforms, while contributing to internal tooling and best practice, is exactly the kind of work I want to do.
+
+Thank you for considering my application. I would be glad to discuss how my background can support your Engineering team and your clients.
+
+Kind regards,
+
+David Munoz-Tord

@@ -1,0 +1,267 @@
+---
+title: Untitled
+format:
+  modern2-cv-pdf: default
+author: David Munoz-Tord
+cvfont: raleway #texlive fonts like raleway,fetamont,gillius,comfortaa
+cvcolor:
+  main: B83B5E
+  accent: 6A2C70
+sidebar:
+  image: portrait.jpg
+  sections:
+    - name: David Munoz Tord
+      items:
+        - icon: envelope
+          text: david.munoztord@mailbox.org
+        - icon: home
+          text: david-munoztord.online
+          href: https://munoztd0.github.io/homepage/
+        - icon: github
+          text: munoztd0
+          href: https://github.com/munoztd0
+        - icon: linkedin
+          text: david-munoz-tord
+          href: https://www.linkedin.com/in/david-munoz-tord-409639150/
+    - name: Core Skills
+      items:
+        - text: R
+          exp: { text: "10 years", num: 1 }
+        - text: SQL
+          exp: { text: "5 years", num: 0.8 }
+        - text: Python
+          exp: { text: "5 years", num: 0.7 }
+        - text: Bash
+          exp: { text: "7 years", num: 0.9 }
+        - text: JavaScript
+          exp: { text: "5 years", num: 0.5 }
+    - name: Stack
+      items:
+        - Shiny (golem, rhino, leprechaun)
+        - devtools, testthat, roxygen2, renv
+        - tidyverse, data.table, ggplot2
+        - Scikit-learn, PyTorch
+        - Docker, GitHub Actions, CircleCI
+    - name: Platforms
+      items:
+        - Linux administration (Ubuntu, RHEL-like)
+        - Cloud infrastructure (AWS)
+        - Posit Connect / Posit Workbench deployments
+        - CI/CD and container workflows
+        - PostgreSQL, Jira, Git
+    - name: Focus Areas
+      items:
+        - Data platform deployment and support
+        - Data engineering and analytics delivery
+        - Linux systems and secure environments
+        - Troubleshooting and incident response
+        - Technical communication with clients
+    - name: Languages
+      items:
+        - text: French
+          exp: { text: "Native", num: 1 }
+        - text: English
+          exp: { text: "Fluent", num: 1 }
+        - text: Spanish
+          exp: { text: "Native", num: 1 }
+        - text: Italian
+          exp: { text: "Passive", num: 0.6 }
+        - text: Japanese
+          exp: { text: "Passive", num: 0.4 }
+    - name: Education
+      items:
+        - text: "PhD Candidate in Computational Neuroscience"
+          inst: "EPFL - Switzerland"
+          time: "03/2020 - 01/2022"
+          details: "Topic: effects of sensory modulation in food behavior"
+        - text: "MSc in Computational Neuroscience"
+          inst: "University of Geneva - Switzerland"
+          time: "09/2018 - 03/2020"
+          details: "Thesis: denoising high-resolution fMRI signals with tICA"
+        - text: "Additional Studies in Computer Science"
+          inst: "UMass Amherst - USA"
+          time: "09/2017 - 06/2018"
+          details: "Project: machine learning for neuroimaging data"
+        - text: "BSc in Cognitive Science"
+          inst: "University of Geneva - Switzerland"
+          time: "09/2014 - 06/2017"
+          details: "Thesis: early detection of autism-related event potentials"
+    - name: Community
+      items:
+        - icon: github
+          text: "Top 12.5% on \\href{https://github-readme-stats-sigma-five.vercel.app/api?username=munoztd0&rank_icon=percentile&theme=radical}{\\underline{GitHub}} (2026)"
+        - icon: share-alt
+          text: "Top 2% on \\href{https://stackoverflow.com/users/13158839/david-muñoz-tord}{\\underline{StackOverflow}} (2024)"
+        - icon: award
+          text: "Global Fellow scholarship (2017)"
+        - icon: bicycle
+          text: "Co-founder of \\href{https://www.rocket-courrier.ch/}{\\underline{Rocket-Courrier}}, a sustainable bike courier cooperative."
+    - name: Source
+      items:
+        - icon: github
+          text: "\\href{https://github.com/munoztd0/CV_quarto/blob/main/jumping/CV.qmd}{\\underline{Quarto source code}}"
+
+execute:
+  echo: false
+editor:
+  markdown:
+    wrap: 72
+---
+
+```{r}
+#| label: cvevents
+cvevents <- function(tbl, when, what, where, descr) {
+  command_start <- "\\cvevent"
+  tbl[[where]] <- gsub("\n", " \\\\newline ", tbl[[where]])
+  res <- paste0(
+    command_start, "{", tbl[[when]], "}", 
+    "{", tbl[[what]], "}",
+    "{", tbl[[where]], "}"
+  )
+  cat(res, sep = "\n\n\n")
+}
+```
+
+# Profile
+
+Infrastructure and analytics engineer with 5+ years of experience delivering data science platforms in regulated and client-facing environments. Strong background in Linux, cloud deployment (AWS), CI/CD, containerized services, and production support for R/Python analytics workflows. I combine hands-on technical delivery with clear stakeholder communication, end-to-end ownership, and a consulting mindset.
+
+
+# Experience
+
+\cvevent{02/2025 - Present}{Senior R Developer}{Johnson \& Johnson}
+
+-   -- Co-led infrastructure and platform migration from SAS-based workflows to a modern R stack for clinical reporting teams
+
+-   -- Built and maintained production R packages and release pipelines
+
+-   -- Designed and operated containerized Posit and Shiny infrastructure for secure, reproducible execution across development and production environments
+
+-   -- Implemented an MCP server and internal code-context integrations so LLM agents could understand the team stack and assist clinical programmers with output generation
+
+-   -- Owned DevOps delivery for the R team: CI/CD maintenance, deployment automation, operational troubleshooting, and platform reliability tasks
+
+<br>
+
+\cvevent{01/2024 - 02/2025}{Data Science Consultant}{Freelance - Pharma \& Tech}
+
+-   -- Delivered end-to-end client projects from infrastructure scoping and architecture design to deployment and support handover
+
+-   -- Deployed custom R Shiny and API solutions on AWS with CI/CD pipelines, containerization, and operational documentation
+
+-   -- Automated data pipelines and reporting workflows with Bash/Python scripting and reproducible environments
+
+-   -- Managed concurrent client requests and communicated technical trade-offs and maintenance plans to non-technical audiences
+
+<br>
+
+\cvevent{04/2022 - 01/2024}{Full-Stack Data Scientist}{FlowBank}
+
+-   -- Built a custom data science and machine learning platform from scratch on AWS for analytics and DS teams
+
+-   -- Set up data scientist IDE environments (notebook-based workflows) with standardized project templates and access controls
+
+-   -- Containerized notebooks and analytics services with Docker to guarantee reproducibility across development, validation, and production environments
+
+-   -- Implemented CRON-scheduled jobs for model retraining, batch scoring, report generation, and maintenance tasks
+
+-   -- Maintained machine learning pipelines in production
+
+-   -- Delivered internal tooling and Linux-based automation (R, Bash, Python), with operational documentation and onboarding support for business teams
+
+<br>
+
+\cvevent{09/2020 - 01/2022}{Biostatistics Instructor}{University of Geneva}
+
+-   -- Taught statistics and practical R/Python workshops to mixed technical audiences
+
+-   -- Produced structured technical learning material and clear troubleshooting guides
+
+<br>
+
+\cvevent{03/2020 - 01/2022}{Neuroscience Researcher}{Campus Biotech}
+
+-   -- Developed large-scale data processing pipelines for clinical and neuroimaging datasets
+
+-   -- Designed and operated an Apache Spark cluster on bare-metal Linux machines for distributed preprocessing and model experimentation workloads
+
+-   -- Applied advanced statistical and machine learning methods in reproducible computing environments
+
+-   -- Collaborated with international teams and maintained strict data governance standards
+
+
+# Open Source and Community
+
+<br>
+
+See my \href{https://github.com/munoztd0}{\underline{GitHub profile}} for a broader list of projects.
+
+<br>
+
+\cvevent{Packages}{Author and Lead Maintainer}{R, Python, Shiny}
+
+-   -- **junco** (Johnson \& Johnson): built a clinical reporting package for production-grade TLG generation and document outputs
+
+-   -- **circle (rOpenSci)**: official maintainer of the CircleCI integration package for R
+
+-   -- **echarts4r** and **fiRebase** (Opifex): maintainer; contributed to interactive visualization tooling and secure backend integration
+
+-   -- Created cross-functional tools including **DbVieweR** and **MathAnimatoR** for reusable analytics workflows
+
+-   -- Contributed to widely used ecosystem projects including **ggplot2**, **brms**, and **AFNI**
+
+<br>
+
+\cvevent{We Data}{Co-President}{Training, Evangelism, Data Science}
+
+-   -- Co-created **Typr**, a modern type-system initiative for improving long-term R package quality and maintainability
+
+-   -- Designed and delivered community workshops, with all material published as \href{https://github.com/munoztd0/teaching/blob/main/README.md}{\underline{open training resources}}
+
+-   -- Organized recurring trainings, hackathons, and local R community sessions at the University of Geneva
+
+<br>
+
+# Selected Publications
+
+See my \href{https://github.com/munoztd0/publications/tree/master}{\underline{publication page}} for a full list.
+
+<br>
+
+**Investigating the effect of liraglutide on self-reported liking and
+neural responses to food stimuli.** Coppin, G., Munoz Tord, D., Pool,
+Cereghetti, D., Golay, A., Sander, D., & Pataky, Z. *Journal of Obesity*
+(2023) -
+\href{https://www.nature.com/articles/s41366-023-01370-w}{\underline{Paper}}
+
+<br>
+
+**Differential contributions of ventral striatum subregions to the
+motivational and hedonic components of the affective processing of
+reward.** Pool, E. R., Munoz Tord, D. , Delplanque, S., Stussi, Y.,
+Cereghetti, D., Vuilleumier, P., & Sander, D. *Journal of Neuroscience*
+(2022) - \href{https://doi.org/10.1523/JNEUROSCI.1124-21.2022}{\underline{Paper}}
+
+<br>
+
+**3D-printed pacifier-shaped mouthpiece for fMRI-compatible
+gustometers.** Munoz Tord, D., Coppin, G., Pool, E. R., Mermoud, C.,
+Pataky, Z., Sander, D., & Delplanque, S. *Eneuro* (2021) - \href{https://dx.doi.org/10.1523\%2FENEURO.0208-21.2021}{\underline{Paper}}
+
+<br>
+
+**Early spatial attention deployment towards aggressive voices.** Burra,
+N., Kerzel, D., Munoz Tord, D., Grandjean, D., & Ceravolo, L. *Social
+Cognitive and Affective Neuroscience* (2019) - \href{https://doi.org/10.1093/scan/nsy100}{\underline{Paper}}
+
+<br>
+
+# Professional References
+
+-   \href{https://www.linkedin.com/in/gabrielmbecker/}{\underline{Gabriel Becker }}[{{< fa envelope >}}](gabembecker@gmail.com), **Statistical Computing Consultant and  R-core contributor**
+
+-   \href{https://www.linkedin.com/in/joe-kovach-758bb694/}{\underline{Joseph Kovach}} [{{< fa envelope >}}](JKovach2@ITS.JNJ.com), **Head of Technological Solutions at Johnson \& Johnson**
+
+-  \href{https://john-coene.com}{\underline{John Coene}} [{{< fa envelope >}}](john@opifex.org), **Lead Developer at Opifex**
+
+-   \href{https://www.linkedin.com/in/psaouter}{\underline{Pierre Saouter }}[{{< fa envelope >}}](psaouter@protonmail.com), **Head Data Scientist at FlowBank**
