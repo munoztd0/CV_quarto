@@ -263,5 +263,3 @@ Cognitive and Affective Neuroscience* (2019) - \href{https://doi.org/10.1093/sca
 -   \href{https://www.linkedin.com/in/joe-kovach-758bb694/}{\underline{Joseph Kovach}} [{{< fa envelope >}}](JKovach2@ITS.JNJ.com), **Head of Technological Solutions at Johnson \& Johnson**
 
 -  \href{https://john-coene.com}{\underline{John Coene}} [{{< fa envelope >}}](john@opifex.org), **Lead Developer at Opifex**
-
--   \href{https://www.linkedin.com/in/psaouter}{\underline{Pierre Saouter }}[{{< fa envelope >}}](psaouter@protonmail.com), **Head Data Scientist at FlowBank**
