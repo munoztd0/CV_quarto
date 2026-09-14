@@ -200,7 +200,9 @@ See my \href{https://github.com/munoztd0}{\underline{GitHub profile}} for a more
 
 \cvevent{Packages}{Author \& Lead Developer}{R, Python, Shiny}
 
--   -- **junco** (Johnson \& Johnson): Created a clinical trial reporting package (TLG generation, advanced statistical analyses, production-ready RTF/DOCX exports).
+-   -- Participated in the R Project Sprint 2026 and contributed to base R development alongside R Core contributors
+
+-   -- **Pharmaverse member**: Active contributor and maintainer of key NEST framework packages, including **rtables**, **tern**, **junco**, and **formatters**, supporting standardized clinical reporting and analysis workflows.
 
 -   -- **circle (rOpenSci)**: Official maintainer of the CircleCI integration package for R.
 

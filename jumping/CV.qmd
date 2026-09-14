@@ -70,11 +70,11 @@ sidebar:
           exp: { text: "Passive", num: 0.4 }
     - name: Education
       items:
-        - text: "PhD Candidate in Computational Neuroscience"
+        - text: "PhD Candidate in Computer Science"
           inst: "EPFL - Switzerland"
           time: "03/2020 - 01/2022"
           details: "Topic: effects of sensory modulation in food behavior"
-        - text: "MSc in Computational Neuroscience"
+        - text: "MSc in Statistics"
           inst: "University of Geneva - Switzerland"
           time: "09/2018 - 03/2020"
           details: "Thesis: denoising high-resolution fMRI signals with tICA"
@@ -90,8 +90,6 @@ sidebar:
       items:
         - icon: github
           text: "Top 12.5% on \\href{https://github-readme-stats-sigma-five.vercel.app/api?username=munoztd0&rank_icon=percentile&theme=radical}{\\underline{GitHub}} (2026)"
-        - icon: share-alt
-          text: "Top 2% on \\href{https://stackoverflow.com/users/13158839/david-muñoz-tord}{\\underline{StackOverflow}} (2024)"
         - icon: award
           text: "Global Fellow scholarship (2017)"
         - icon: bicycle
@@ -200,7 +198,9 @@ See my \href{https://github.com/munoztd0}{\underline{GitHub profile}} for a broa
 
 \cvevent{Packages}{Author and Lead Maintainer}{R, Python, Shiny}
 
--   -- **junco** (Johnson \& Johnson): built a clinical reporting package for production-grade TLG generation and document outputs
+-   -- Participated in the R Project Sprint 2026 and contributed to base R development alongside R Core contributors
+
+-   -- **Pharmaverse member**: Active contributor and maintainer of key NEST framework packages, including **rtables**, **tern**, **junco**, and **formatters**, supporting standardized clinical reporting and analysis workflows.
 
 -   -- **circle (rOpenSci)**: official maintainer of the CircleCI integration package for R
 
