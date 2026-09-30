@@ -12,8 +12,8 @@ sidebar:
   sections:
     - name: David Munoz Tord
       items:
-        # - icon: map-marker
-        #   text: Geneva, Switzerland
+        - icon: map-marker
+          text: Geneva, Switzerland
         - icon: envelope
           text: david.munoztord@mailbox.org
         - icon: home
@@ -25,40 +25,32 @@ sidebar:
         - icon: linkedin
           text: david-munoz-tord
           href: https://www.linkedin.com/in/david-munoz-tord-409639150/
-    - name: Skills
+    - name: Competencies
       items:
         - text: R
           exp: { text: "10 yrs", num: 1 }
-        - text: SQL
+        - text: "Shiny Apps"
+          exp: { text: "7 yrs", num: 0.7 }
+        - text: "DevOps"
           exp: { text: "5 yrs", num: 0.8 }
         - text: Python
           exp: { text: "5 yrs", num: 0.7 }
-        - text: Bash
-          exp: { text: "7 yrs", num: 0.9 }
         - text: JavaScript
           exp: { text: "5 yrs", num: 0.5 }
     - name: Libraries
       items:
-        - Shiny, Quarto, R Markdown
-        - devtools, testthat, roxygen2, renv
-        - tidyverse, data.table, ggplot2, plotly, NEST
-        - brms, lmer, Rstan, JAGS, H2O, XGBoost, tidymodels
-        - Scikit-learn, PyTorch
-    - name: Technologies
-      items:
-        - Git - BASH
-        - Jira - Agile
-        - CI/CD - Docker
-        - Posit Server - AWS
-        - REST APIs - Postgres
+        - "Viz: ggplot2, plotly, echarts4r"
+        - "Data: DBI, data.table, SQL"
+        - "DevOps: Git, Docker, CI/CD, Azure"
+        - "AI/ML: tidymodels, brms, PyTorch"
+        - "Reporting: Quarto, R Markdown"
     - name: Domains
       items:
+        - Interactive Clinical Data Analysis
+        - Lab Visualizations
+        - Exploratory Data Analysis (EDA)
         - Clinical Trial Reporting
-        - CDISC (SDTM/ADaM)
-        - Data Mining
-        - Machine Learning
-        - Data Visualization
-        - Bayesian Statistics
+        - Bayesian Statistics & ML
     - name: Languages
       items:
         - text: French
@@ -67,16 +59,12 @@ sidebar:
           exp: { text: "Fluent", num: 1 }
         - text: Spanish
           exp: { text: "Native", num: 1 }
-        - text: Italian
-          exp: { text: "Basic", num: 0.6 }
-        - text: Japanese
-          exp: { text: "Basic", num: 0.4 }
     - name: Education
       items:
-        - text: "Ph.D. Candidate in Computational Neuroscience"
+        - text: "Ph.D. in Computational Neuroscience"
           inst: "Campus Biotech - Novo Nordisk"
-          time: "03/2020 - 01/2022"
-          details: "Topic: Sensory alteration effects of GLP-1 receptor agonist liraglutide"
+          time: "03/2019 - 01/2022"
+          details: "Focus: Large-scale clinical data processing & Bayesian modeling"
         - text: "MSc in Computational Neuroscience"
           inst: "Geneva Neurocenter - Firmenich"
           time: "09/2018 - 03/2020"
@@ -86,7 +74,7 @@ sidebar:
           time: "09/2017 - 06/2018"
           details: "Capstone: Machine Learning for neuroimaging data"
         - text: "BSc in Life Sciences"
-          inst: "University of Geneva - Switzerland"
+          inst: "University of Geneva"
           time: "09/2014 - 06/2017"
           details: "Thesis: Early detection of ASD event-related potentials"
     - name: Extracurricular
@@ -127,17 +115,21 @@ cvevents <- function(tbl, when, what, where, descr) {
 
 # Profile
 
-Senior R Developer with expertise in clinical trial reporting, software architecture, and production deployment. Specialist in the Shiny ecosystem, R package development, and CI/CD. Track record of generating CDISC-compliant TFLs and automating regulatory workflows using Quarto. Strongly involved in open source and technical mentoring.
+Senior R Developer with expertise in clinical trial, 
+software architecture, and production deployment. Specialist in 
+R package development, and CI/CD. Track record
+ of generating CDISC-compliant TFLs and automating regulatory workflows. 
+ Strongly involved in open source and technical mentoring.
 
 # Experience
 
-\cvevent{02/2025 - Present}{Senior R Developer}{Cytel}
+\cvevent{02/2025 - Present}{Senior R Developer}{Cytel for Johnson \& Johnson}
 
 -   -- Leading the R Team at Johnson \& Johnson managing the strategic transition from SAS: steering, evangelization, and continuous training of clinical teams
 
 -   -- Intensive development of validated R packages for clinical trial programming, specifically aligned with CDISC standards
 
--   -- Implementation of automated reporting systems leveraging Quarto to efficiently generate TFLs (Tables, Figures, Listings) for regulatory submissions
+-   -- Implementation of automated reporting systems to efficiently generate TFLs (Tables, Figures, Listings) for regulatory submissions
 
 -   -- Design, performance testing, and maintenance of analytical infrastructures (Posit Server) hosting Shiny applications in a strictly regulated environment
 
@@ -149,8 +141,15 @@ Senior R Developer with expertise in clinical trial reporting, software architec
 
 -   -- Developed high-performance custom R Shiny containerized apps, integrating REST APIs and implementing rigorous unit testing: See \href{https://ecocalc.eu/}{\underline{here}} for the Chemical Intelligence Platform for Sustainable Design
 
-
 -   -- Predictive modeling and automation of data pipelines utilizing tidyverse and advanced data visualization libraries (ggplot2, echarts4r, plotly)
+
+<br>
+
+\cvevent{2023 - Present}{Key Contributor \& Developer}{Opifex}
+
+-   -- **echarts4r:** Lead maintainer, high-impact visualization package. Widely adopted across the R community for generating complex, interactive charts (used in production by numerous enterprises and research groups), bridging R data workflows with Apache ECharts.
+
+-   -- **fiRebase:** Lead maintainer, enable secure, scalable backend integrations (authentication, real-time databases) for R Shiny applications, ensuring robust infrastructure for data-driven web apps.
 
 <br>
 
@@ -158,7 +157,7 @@ Senior R Developer with expertise in clinical trial reporting, software architec
 
 -   -- Led the data team in evolving the architecture and creating the bank's analytical platforms (Data Science, Data Engineering, DevOps)
 
--   -- Operationalized production-ready R Shiny applications (as packages) with continuous integration (CI/CD) and automated testing
+-   -- Custom Dashboards: Developed containerized R Shiny applications for interactive data exploration, featuring advanced visualizations (plotly, echarts4r) that support rapid decision-making.
 
 -   -- Maintained machine learning pipelines and provided daily technical mentoring to internal cross-functional teams
 
@@ -180,11 +179,11 @@ Senior R Developer with expertise in clinical trial reporting, software architec
 
 \cvevent{03/2020 - 01/2022}{Research Scientist}{Novo Nordisk}
 
--   -- Developed large-scale data processing pipelines for clinical trial datasets
+-   -- Clinical Pipelines: Developed large-scale R pipelines for processing and visualizing clinical trial datasets and sensory alteration data.
 
--   -- Applied advanced Bayesian statistical modeling and machine learning methods
+-   -- Advanced Modeling: Applied Bayesian statistics and machine learning to extract insights from complex biological data.
 
--   -- Collaborated internationally and maintained rigorous data governance standards
+-   -- Collaboration: Partnered with international teams to define data requirements and deliver analytical outputs.
 
 <br>
 
@@ -198,13 +197,13 @@ See my \href{https://github.com/munoztd0}{\underline{GitHub profile}} for a more
 
 \cvevent{Packages}{Author \& Lead Developer}{R, Python, Shiny}
 
--   -- **junco** (Johnson \& Johnson): Created a clinical trial reporting package (TFL generation, advanced statistical analyses, production-ready RTF/DOCX exports).
+-   -- Participated in the R Project Sprint 2026 and contributed to base R development alongside **R Core** contributors
 
--   -- **circle (rOpenSci)**: Official maintainer of the CircleCI integration package for R.
+-   -- **Pharmaverse member**: Active contributor and maintainer of key NEST framework packages, including **rtables**, **tern**, **junco**, and **formatters**, supporting standardized clinical reporting and analysis workflows.
 
--   -- **echarts4r and fiRebase (Opifex)**: Maintainer. Developed advanced interactive visualizations (R/JS) and implemented secure backend infrastructures (authentication, databases).
+-   -- **circle (rOpenSci)**: Official maintainer of the CircleCI DevOps integration package for R.
 
--   -- **Cross-functional tools**: Creator of **DbVieweR** (database management in Shiny) and **MathAnimatoR** (mathematical animation engine integrating R and Python).
+-   -- **R Consortium**: Active member and contributor to initiatives advancing R's ecosystem, interoperability standards, and enterprise adoption.
 
 -   -- **Major contributions**: Contributed source code to reference ecosystem packages, notably **ggplot2**, **brms**, **AFNI**.
 
@@ -222,15 +221,8 @@ See my \href{https://github.com/munoztd0}{\underline{GitHub profile}} for a more
 
 # Publications
 
-See my \href{https://github.com/munoztd0/publications/tree/master}{\underline{publications page}} for a complete list of my scientific work.
-
-<br>
-
-**Investigating the effect of liraglutide on self-reported liking and
-neural responses to food stimuli.** Coppin, G., Munoz Tord, D., Pool,
-Cereghetti, D., Golay, A., Sander, D., & Pataky, Z. *Journal of Obesity*
-(2023) -
-\href{https://www.nature.com/articles/s41366-023-01370-w}{\underline{Paper}}
+See my \href{https://github.com/munoztd0/publications/tree/master}{\underline{publications page}} for more. 
+Focus on data-intensive clinical and neuroscience research.
 
 <br>
 
@@ -242,17 +234,15 @@ Cereghetti, D., Vuilleumier, P., & Sander, D. *Journal of Neuroscience*
 
 <br>
 
-**3D-printed pacifier-shaped mouthpiece for fMRI-compatible
-gustometers.** Munoz Tord, D., Coppin, G., Pool, E. R., Mermoud, C.,
-Pataky, Z., Sander, D., & Delplanque, S. *Eneuro* (2021) - \href{https://dx.doi.org/10.1523\%2FENEURO.0208-21.2021}{\underline{Paper}}
+
+**Effect of GLP-1 receptor agonist on self-reported liking scales and
+its neural responses to food stimuli.** Coppin, G., Munoz Tord, D., Pool,
+Cereghetti, D., Golay, A., Sander, D., & Pataky, Z. *Journal of Obesity*
+(2023) -
+\href{https://www.nature.com/articles/s41366-023-01370-w}{\underline{Paper}}
 
 <br>
 
-**Early spatial attention deployment towards aggressive voices.** Burra,
-N., Kerzel, D., Munoz Tord, D., Grandjean, D., & Ceravolo, L. *Social
-Cognitive and Affective Neuroscience* (2019) - \href{https://doi.org/10.1093/scan/nsy100}{\underline{Paper}}
-
-<br>
 
 # Professional References
 
