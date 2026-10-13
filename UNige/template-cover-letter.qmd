@@ -1,0 +1,51 @@
+---
+format:
+  modern2-cover-letter-pdf: default
+author: David Munoz-Tord
+date: today
+date-format: long
+
+cvfont: raleway
+cvcolor: 
+  main: B83B5E
+  accent: 6A2C70
+  
+title: Lettre de motivation
+sub-title: "Candidature au poste d'Adjoint scientifique"
+
+contact:
+  street: Genève
+  zip: 1212
+  city: Geneva, Switzerland
+  phone: +41 79 244 17 56
+  mail: david.munoztord@mailbox.org
+  
+organization: 
+  contact-person: Comité de sélection
+  name: Université de Genève
+  street: Rue Général-Dufour 24
+  zip: 1211 
+  city: Genève 4
+---
+
+Madame, Monsieur,
+
+Tout au long de mon parcours, tant dans la recherche académique que dans l'industrie, un fil conducteur est toujours resté là, la volonté constante de soutenir et faire progresser la recherche scientifique. 
+C'est dans la continuité de cette ligne directrice que je candidate aujourd'hui au poste d'adjoint scientifique.
+
+Mon parcours m'a doté d'une double expertise solide. 
+
+D'une part, j'ai piloté des projets techniques et méthodologiques d'envergure, 
+notamment des environnements de données complexes, 
+tout en coordonnant des équipes de recherche et de développement. 
+D'autre part, je m'investis activement depuis des années dans l'écosystème open-source et la formation, 
+que ce soit à travers le développement de packages R, la communauté universitaire ou la création d'une chaîne dédiée à l'enseignement statistique.
+
+Rejoindre l'Université de Genève en tant qu'adjoint scientifique représente pour moi l'opportunité idéale de mettre cette rigueur technique et cette culture du partage au service direct de vos équipes. 
+Je souhaite apporter une aide fiable, concrète et structurée aux chercheurs/euses, de la conception méthodologique jusqu'à la reproductibilité des analyses.
+
+Je me tiens à votre entière disposition pour un entretien qui me permettra de vous exposer plus en détail mes motivations.
+
+Meilleures salutations,
+
+David Munoz-Tord
