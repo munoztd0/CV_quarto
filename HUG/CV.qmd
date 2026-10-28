@@ -1,0 +1,337 @@
+---
+title: Untitled
+format:
+  modern2-cv-pdf: default
+author: David Munoz-Tord
+cvfont: raleway
+cvcolor:
+  main: B83B5E
+  accent: 6A2C70
+sidebar:
+  image: portrait.jpg
+  sections:
+    - name: David Munoz Tord
+      items:
+        - icon: map-marker
+          text: Geneva, Switzerland
+        - icon: envelope
+          text: david.munoztord@mailbox.org
+        - icon: home
+          text: david-munoztord.online
+          href: https://munoztd0.github.io/homepage/
+        - icon: github
+          text: munoztd0
+          href: https://github.com/munoztd0
+        - icon: linkedin
+          text: david-munoz-tord
+          href: https://www.linkedin.com/in/david-munoz-tord-409639150/
+    - name: Statistical Methods
+      items:
+        - "Survival Analysis & Cox Models"
+        - "Linear & Generalized Mixed-Effects Models"
+        - "Hierarchical Bayesian Modeling (brms, Stan)"
+        - "Longitudinal & Repeated-Measures Designs"
+        - "Multivariate Pattern Analysis"
+        - "Reinforcement Learning & Computational Models"
+        - "Propensity Score & Causal Inference"
+    - name: Programming
+      items:
+        - text: R
+          exp: { text: "10 yrs", num: 1 }
+        - text: Python
+          exp: { text: "5 yrs", num: 0.7 }
+        - text: SQL
+          exp: { text: "4 yrs", num: 0.5 }
+        - text: MATLAB
+          exp: { text: "4 yrs", num: 0.5 }
+        - text: JavaScript
+          exp: { text: "3 yrs", num: 0.4 }
+    - name: Research Tools
+      items:
+        - "tidyverse, data.table, DBI"
+        - "brms, rstan, JAGS, hBayesDM"
+        - "survival, lme4, nlme, emmeans"
+        - "ggplot2, plotly, echarts4r"
+        - "Quarto, R Markdown, LaTeX"
+    - name: Languages
+      items:
+        - text: French
+          exp: { text: "Native", num: 1 }
+        - text: Spanish
+          exp: { text: "Native", num: 1 }
+        - text: English
+          exp: { text: "Fluent (C2)", num: 1 }
+        - text: German
+          exp: { text: "B2", num: 0.4 }
+    - name: Education
+      items:
+        - text: "Ph.D. Candidate in Computational Neuroscience"
+          inst: "UniDistance — HUG"
+          time: "03/2019 - 01/2022"
+          details: "Longitudinal clinical data, hierarchical Bayesian modeling, reinforcement learning. Supervised by Pr. Sander & Pr. Coppin."
+        - text: "MSc in Neuroscience"
+          inst: "University of Geneva"
+          time: "09/2018 - 03/2020"
+          details: "Thesis: Denoising of high-resolution fMRI using tICA. Supervised by Pr. Pool."
+        - text: "Complementary Studies in Computer Science"
+          inst: "Smith College — USA"
+          time: "09/2017 - 06/2018"
+          details: "Capstone: Machine learning for neuroimaging data."
+        - text: "BSc in Cognitive Science"
+          inst: "University of Geneva"
+          time: "09/2014 - 06/2017"
+          details: "Thesis: ERP evidence of auditory spatial attention. Supervised by Pr. Burra."
+    - name: Recognition
+      items:
+        - icon: award
+          text: "Global Fellow scholarship (2017)"
+        - icon: share-alt
+          text: "Top 2% on StackOverflow (2024)"
+        - icon: github
+          text: "Top 12.5% on GitHub (2026)"
+
+execute:
+  echo: false
+editor:
+  markdown:
+    wrap: 72
+---
+
+```{r}
+#| label: cvevents
+cvevents <- function(tbl, when, what, where, descr) {
+  command_start <- "\\cvevent"
+  tbl[[where]] <- gsub("\n", " \\\\newline ", tbl[[where]])
+  res <- paste0(
+    command_start, "{", tbl[[when]], "}",
+    "{", tbl[[what]], "}",
+    "{", tbl[[where]], "}"
+  )
+  cat(res, sep = "\n\n\n")
+}
+```
+
+# Profile
+
+Researcher and statistician with a background in Computational Neuroscience and over 5 years of applied statistical work in clinical and observational settings.
+Direct experience with the HUG (Department of Diabetes) as a research
+assistant, longitudinal clinical data analysis, and the development of
+novel statistical methods and reproducible analysis pipelines.
+Native French speaker, fluent English, experienced in interdisciplinary
+collaboration with clinical teams and in teaching statistics.
+
+# Research & Applied Statistics Experience
+
+\cvevent{03/2020 - 01/2022}{Research Statistician \& PhD Candidate}{HUG — Department of Diabetes \& University of Geneva}
+
+-   -- Acted as the dedicated statistician for the HUG Diabetes unit,
+    designing and executing analyses on longitudinal clinical trial data
+    (pre/post treatment, repeated measures)
+
+-   -- Applied hierarchical Bayesian modeling, survival analysis, and
+    linear mixed-effects models to extract insights from complex
+    clinical datasets (fMRI, EEG, blood biomarkers, behavioral scales)
+
+-   -- Processed and harmonized terabytes of longitudinal DICOM data
+    into BIDS format, creating reproducible and shareable datasets
+    for multi-site analysis
+
+-   -- Developed model-free reinforcement learning algorithms
+    (Q-learning) to investigate computational bases of decision-making
+    in patient populations
+
+-   -- Collaborated with Caltech data engineers to implement ICA-based
+    denoising pipelines for neuroimaging data quality improvement
+
+-   -- Co-authored 4 peer-reviewed publications in neuroscience and
+    obesity journals
+
+<br>
+
+\cvevent{03/2019 - 03/2020}{Research Intern — Computational Modeling}{Geneva Neurocenter — University of Geneva}
+
+-   -- Explored theory-driven modeling approaches on real-world
+    behavioral datasets under the guidance of Pr. Lebreton
+
+-   -- Conducted rigorous model validation and parameter recovery
+    assessments using open-source data
+
+<br>
+
+\cvevent{09/2020 - 01/2022}{Teaching Assistant in Biostatistics}{University of Geneva}
+
+-   -- Taught statistics and led practical workshops in R and Python
+    for graduate students across multiple programs
+
+-   -- Mentored students on statistical analysis design and data
+    visualization for their research projects
+
+-   -- Created and freely published structured workshops on
+    \href{https://github.com/munoztd0/teaching/blob/main/README.md}{\underline{applied statistics and reproducible research}}
+
+<br>
+
+# Industry Experience — Statistical Programming & R&D
+
+\cvevent{02/2025 - Present}{Senior Statistical Programmer}{Cytel for Johnson \& Johnson}
+
+-   -- Lead statistical programming for clinical trial analyses:
+    survival analysis, Cox proportional hazards, mixed-effects models,
+    and CDISC-compliant statistical outputs
+
+-   -- Design and validate R packages implementing regulatory-grade
+    statistical methods for clinical trial reporting
+
+-   -- Build interactive analytical tools (Shiny) enabling clinical
+    teams to explore trial data and validate statistical outputs
+    independently
+
+<br>
+
+\cvevent{04/2022 - 01/2024}{Data Scientist}{FlowBank}
+
+-   -- Led Bayesian clustering and segmentation analyses for
+    customer behavior modeling
+
+-   -- Developed and maintained internal R packages for statistical
+    reporting, with full test coverage and documentation
+
+-   -- Built interactive dashboards supporting exploratory data
+    analysis for cross-functional teams
+
+<br>
+
+\cvevent{01/2024 - 02/2025}{Data Science Consultant}{Freelance — Pharma \& Tech}
+
+-   -- Delivered end-to-end statistical analysis projects: from
+    study design consultation to predictive modeling and
+    reproducible reporting
+
+-   -- Developed a public-facing
+    \href{https://ecocalc.eu/}{\underline{interactive data platform}}
+    for chemical risk assessment (Sustainable Design initiative)
+
+<br>
+
+# Methodological Development & Open Source
+
+\cvevent{2023 - Present}{Lead Maintainer \& Contributor}{Open Source Statistical Ecosystem}
+
+-   -- **Pharmaverse**: Active contributor of `rtables`, `tern`, `junco`, `formatters` — the standardized statistical reporting framework used across the pharmaceutical industry
+
+-   -- **Typr** (We Data): Co-creator of a type system for R designed
+    to improve statistical code safety and reproducibility in
+    research settings
+
+-   -- **echarts4r**: Lead maintainer of a widely-adopted interactive
+    visualization package bridging R and Apache ECharts
+
+-   -- **circle (rOpenSci)**: Maintainer of CI/CD integration for
+    reproducible research workflows
+
+-   -- **Contributions**: `ggplot2`, `brms`, `AFNI` (3dLMEr —
+    linear mixed-effects regression for neuroimaging)
+
+-   -- Participated in the **R Project Sprint 2026**, contributing
+    to base R development alongside R Core
+
+<br>
+
+\cvevent{2020 - Present}{Co-President}{We Data — Data Science Community}
+
+-   -- Organize and deliver workshops on statistics, reproducible
+    research, and programming for the Geneva data community
+
+-   -- Host the \href{https://use-r-carlvogt.github.io/prochains-lunchs/}{\underline{R-Lunches}}
+    at the University of Geneva
+
+<br>
+
+\cvevent{2023 - Present}{Volunteer Researcher}{actif-traffiC}
+
+-   -- Analyze public Swiss Federal Statistical Office data to evaluate
+    the impact of 30 km/h speed limits on road safety ;an applied
+    observational study with policy implications
+    (\href{https://munoztd0.shinyapps.io/RoadKillsGeneva/}{\underline{interactive app}})
+
+<br>
+
+# Publications
+
+\href{https://github.com/munoztd0/publications/tree/master}{\underline{Full list}}
+
+<br>
+
+**Effect of GLP-1 receptor agonist on self-reported liking scales and its
+neural responses to food stimuli.** Coppin, G., Munoz Tord, D., Pool, E.R.,
+Cereghetti, D., Golay, A., Sander, D., \& Pataky, Z.
+*International Journal of Obesity* (2023) —
+\href{https://www.nature.com/articles/s41366-023-01370-w}{\underline{Paper}}
+
+<br>
+
+**Differential contributions of ventral striatum subregions to the
+motivational and hedonic components of the affective processing of
+reward.** Pool, E.R., Munoz Tord, D., Delplanque, S., Stussi, Y.,
+Cereghetti, D., Vuilleumier, P., \& Sander, D.
+*Journal of Neuroscience* (2022) —
+\href{https://doi.org/10.1523/JNEUROSCI.1124-21.2022}{\underline{Paper}}
+
+<br>
+
+**3D-printed pacifier-shaped mouthpiece for fMRI-compatible gustometers.**
+Munoz Tord, D., Coppin, G., Pool, E.R., Mermoud, C., Pataky, Z.,
+Sander, D., \& Delplanque, S.
+*eNeuro* (2021) —
+\href{https://dx.doi.org/10.1523/ENEURO.0208-21.2021}{\underline{Paper}}
+
+<br>
+
+**Early spatial attention deployment towards aggressive voices.**
+Burra, N., Kerzel, D., Munoz Tord, D., Grandjean, D., \& Ceravolo, L.
+*Social Cognitive and Affective Neuroscience* (2019) —
+\href{https://doi.org/10.1093/scan/nsy100}{\underline{Paper}}
+
+<br>
+
+# Professional References
+
+-   \href{https://www.unige.ch/cisa/center/members/meuleman-ben}{\underline{Ben Meuleman}}:
+    **Statistician, University of Geneva**
+    (\href{mailto:Ben.Meuleman@unige.ch}{\underline{e-mail}})
+
+-   \href{https://genev.unige.ch/research/people/Jose-Manuel-De-Abreu-Nunes}{\underline{Jose Nunes}}:
+    **Professor of Biostatistics, University of Geneva**
+    (\href{mailto:Jose.deAbreuNunes@unige.ch}{\underline{e-mail}})
+
+-   \href{https://sites.google.com/site/maellebreton/home}{\underline{Maël Lebreton}}:
+    **Professor of Neuroeconomics, Paris School of Economics**
+    (\href{mailto:mael.lebreton@psemail.eu}{\underline{e-mail}})
+
+-   \href{https://www.researchgate.net/profile/Eva-Pool}{\underline{Eva R. Pool}}:
+    **Professor, University of Geneva**
+    (\href{mailto:Eva.Pool@unige.ch}{\underline{e-mail}})
+
+-   \href{https://www.linkedin.com/in/gabrielmbecker/}{\underline{Gabriel Becker}}:
+    **R Core Contributor \& Statistical Computing Consultant**
+    (\href{mailto:gabembecker@gmail.com}{\underline{e-mail}})
+```
+
+---
+
+## Summary of what changed and why
+
+| Change | Rationale |
+|--------|-----------|
+| Profile rewritten: "Researcher and statistician" | Matches JD language ("recherche en épidémiologie et statistiques appliquées") |
+| HUG Diabetes unit named explicitly as employer | Direct institutional connection = strongest signal |
+| Statistical methods in sidebar (survival, Cox, mixed models, Bayesian) | JD asks for "nouvelles techniques d'analyse statistiques" |
+| DevOps/Docker/CI/CD/Azure/CDISC/TFLs removed from visible text | Irrelevant noise for a research position |
+| Industry roles compressed, reframed around statistical programming | Shows maturity without dominating the narrative |
+| "Methodological Development" replaces "Open Source" as section title | JD literally says "Vous étudiez de nouvelles techniques d'analyse" ;your packages ARE that |
+| actif-traffiC kept and highlighted | Observational study on public data → mirrors the JD's "registres et études observationnelles longitudinales" |
+| Teaching elevated to its own block | JD explicitly asks for "enseignement de travaux pratiques, séminaires" |
+| French listed as Native, top of Languages | JD requires C1 ;you exceed it trivially |
+| References: removed J&J/Opifex/FlowBank, kept academics + Gabriel Becker | Hospital hiring committees value academic references |
+
+**One thing to verify**: you said you worked with HUG Diabetes during the PhD. Make sure the dates (03/2020–01/2022) and the framing ("Research Statistician") are accurate and defensible if they call for reference checks. If it was more of a collaboration than a formal role, you could soften to "Research Collaborator with HUG Diabetes unit" ;but if you were embedded there, keep it strong.

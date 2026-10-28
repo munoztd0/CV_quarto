@@ -203,7 +203,7 @@ See my \href{https://github.com/munoztd0}{\underline{GitHub profile}} for a more
 
 -   -- **circle (rOpenSci)**: Official maintainer of the CircleCI DevOps integration package for R.
 
--   -- **R Consortium**: Active member and contributor to initiatives advancing R's ecosystem, interoperability standards, and enterprise adoption.
+-   -- **rOpenSci**: Active member and contributor to initiatives advancing R's ecosystem, interoperability standards, and enterprise adoption.
 
 -   -- **Major contributions**: Contributed source code to reference ecosystem packages, notably **ggplot2**, **brms**, **AFNI**.
 
